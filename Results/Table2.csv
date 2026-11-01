@@ -1,0 +1,12 @@
+Comparison,Before income terms (M1) Estimate (95% CrI),Before income terms (M1) P(Δ < −2),Before income terms (M1) P(|Δ| ≤ 2),Before income terms (M1) P(Δ > 2),Main model (M2) Estimate (95% CrI),Main model (M2) P(Δ < −2),Main model (M2) P(|Δ| ≤ 2),Main model (M2) P(Δ > 2)
+E_1 [†] Concentration,"5.4 (1.7, 9.4)",0.00,0.04,0.96,"−0.3 (−4.2, 3.6)",0.20,0.68,0.13
+E_2 [†] Direction,"3.3 (−2.7, 9.7)",0.04,0.29,0.66,"0.4 (−5.5, 6.8)",0.22,0.47,0.31
+E_3a [†] Wife-only vs. wife earns 90%,"4.7 (−2.5, 11.6)",0.03,0.20,0.77,"1.4 (−5.6, 8.1)",0.17,0.40,0.43
+E_3b Husband-only vs. husband earns 90%,"1.6 (−0.8, 3.9)",0.00,0.64,0.36,"−2.7 (−5.0, −0.4)",0.72,0.28,0.00
+E_4 Wife-only vs. husband-only (derived),"6.4 (2.4, 10.5)",0.00,0.02,0.98,"4.5 (0.9, 8.3)",0.00,0.08,0.92
+
+"Note: Percentage points; posterior median (95% equal-tailed credible interval, CrI) over the common-support sample (n = 18,868 household-years). P, posterior probability; ±2 points, prespecified region of practical equivalence."
+"Note: E_1 = [p_D(0.1) + p_D(0.9)]/2 − p_D(0.5); E_2 = p_D(0.9) − p_D(0.1); E_3a = p_F − p_D(0.9); E_3b = p_M − p_D(0.1); E_4 = p_F − p_M. p_D(s), p_M, p_F: standardized probabilities with all couples set to dual-earner with wife's share s, to husband-only or to wife-only."
+"Note: M1 omits the couple's earnings and other household income; both models include spouses' ages and education, household composition, survey year and NUTS-2 and linkage-chain intercepts."
+"Note: [†] Relies on p_D(0.9): only 74 dual-earner household-years in Q had a wife's share of 0.85–0.95 (prespecified minimum 200), and 0.9 lies beyond the 97.5th weighted percentile of shares (0.77)."
+

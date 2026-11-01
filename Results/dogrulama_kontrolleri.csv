@@ -1,0 +1,40 @@
+kontrol,kaynak,beklenen,bulunan,durum
+Satır sayısı,talimat,239985,239985,Tuttu
+Sütun sayısı,talimat,266,266,Tuttu
+Her hanede tek hane_reisi,talimat,0,0,Tuttu
+2023 hane sayısı,talimat,24932,24932,Tuttu
+2023 FK240 dolu fert,talimat,38531,38531,Tuttu
+2023 f_kayit = 1 fert,tarif,60222,60222,Tuttu
+"2023 HB040 toplamı (milyon hane, 26,7–27,2)",talimat,26.95,26.725,Tuttu
+2023 HE090 = 1 hane,tarif,15407,15407,Tuttu
+2023 HE090 = 2 hane,tarif,9525,9525,Tuttu
+2023 HE090 boş hane,tarif,0,0,Tuttu
+2024 hane sayısı,talimat,25925,25925,Tuttu
+2024 FK240 dolu fert,talimat,39747,39747,Tuttu
+2024 f_kayit = 1 fert,tarif,61846,61846,Tuttu
+"2024 HB040 toplamı (milyon hane, 26,7–27,2)",talimat,26.95,26.947,Tuttu
+2024 HE090 = 1 hane,tarif,15893,15893,Tuttu
+2024 HE090 = 2 hane,tarif,10032,10032,Tuttu
+2024 HE090 boş hane,tarif,0,0,Tuttu
+2025 hane sayısı,talimat,25836,25836,Tuttu
+2025 FK240 dolu fert,talimat,39494,39494,Tuttu
+2025 f_kayit = 1 fert,tarif,61812,61812,Tuttu
+"2025 HB040 toplamı (milyon hane, 26,7–27,2)",talimat,26.95,27.196,Tuttu
+2025 HE090 = 1 hane,talimat,15772,15772,Tuttu
+2025 HE090 = 2 hane,talimat,10064,10064,Tuttu
+2025 HE090 boş hane,tarif,0,0,Tuttu
+2023 TR63 hanesi,talimat,0,0,Tuttu
+2024 TR63 hanesi,tarif,695,695,Tuttu
+FK070 = gelir_yili − FK080,tarif,0,0,Tuttu
+2023 HG110 formülü tutmayan hane (negatif gelir kuralı),tarif,28,28,Tuttu
+2024 HG110 formülü tutmayan hane (negatif gelir kuralı),tarif,5,5,Tuttu
+2025 HG110 formülü tutmayan hane (negatif gelir kuralı),tarif,15,15,Tuttu
+HG110 formülünü tutmayanların tamamı formülle negatif,tarif,0,0,Tuttu
+Önceki çalışmanın parquet dosyası ile satır/sütun/ad aynı,önceki çalışma,TRUE,TRUE,Tuttu
+Önceki çalışmanın parquet dosyası ile değeri farklı sütun,önceki çalışma,0,0,Tuttu
+Önceki çalışmanın parquet dosyası ile türü farklı sütun,önceki çalışma,0,0,Tuttu
+"Karşılıklı olmayan eş bağı (fert, üç yıl)",tarif,44,44,Tuttu
+Eşi kayıtlı 18 yaş altı fert,tarif,31,31,Tuttu
+İmza eşleşmesi 2023–2024,inceleme raporu,12924,12924,Tuttu
+İmza eşleşmesi 2023–2025,inceleme raporu,7432,7432,Tuttu
+İmza eşleşmesi 2024–2025,inceleme raporu,13396,13396,Tuttu
