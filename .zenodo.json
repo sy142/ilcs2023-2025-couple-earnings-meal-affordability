@@ -1,0 +1,38 @@
+{
+  "title": "Analysis code and aggregated outputs: division of couples' labor earnings and meal-affordability deprivation in Türkiye (ILCS 2023–2025)",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Yılmaz, Salim",
+      "affiliation": "Acıbadem Mehmet Ali Aydınlar University",
+      "orcid": "0000-0003-2405-5084"
+    },
+    {
+      "name": "Günal, Ahmet Murat",
+      "affiliation": "Haliç University",
+      "orcid": "0000-0001-9109-1080"
+    }
+  ],
+  "description": "<p>Analysis code and aggregated outputs of a study of how the division of labor earnings between spouses is related to meal-affordability deprivation of their households, using the cross-sectional microdata of the 2023–2025 Income and Living Conditions Survey (ILCS), the Turkish implementation of EU-SILC. The unit of analysis is the reference couple of each household. Couples are classified by earner structure (husband-only, dual-earner and wife-only earner couples) and, among dual-earner couples, by the wife's share of the couple's net labor earnings. The analytic sample is restricted to a rectangular common support of the estimated earner-structure probabilities. Food deprivation is modeled with a weighted (pseudo-posterior) Bayesian multilevel logistic model (brms with CmdStan) with intercepts for NUTS-2 regions and for linkage chains of households observed in more than one survey year. Probabilities are standardized to the covariates of the common-support sample, marginalizing over the chain intercepts by Gauss–Hermite quadrature, and summarized as prespecified comparisons against a region of practical equivalence of ±2 percentage points. Secondary analyses (husband's status, survey years), sensitivity analyses and post hoc analyses of a time channel within the household (work intensity of the spouses, other adults in the household) are included. The outcome is the inability to afford a meal with meat, chicken or fish, or a vegetarian equivalent, every second day (a single material deprivation item).</p><p>The archive includes the R and Python code, 21 supplementary tables, 9 figures with their aggregated data, audit files, the analysis plan and its addendum. The repository contains no microdata; the TurkStat microdata must be obtained through TurkStat's official procedures. A manuscript is under review.</p>",
+  "keywords": [
+    "food deprivation",
+    "meal affordability",
+    "female breadwinners",
+    "dual-earner couples",
+    "intrahousehold resource allocation",
+    "earnings share",
+    "Bayesian multilevel model",
+    "EU-SILC",
+    "Türkiye"
+  ],
+  "license": "MIT",
+  "language": "eng",
+  "version": "1.0.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/sy142/ilcs2023-2025-couple-earnings-meal-affordability",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Division of couples' labor earnings and meal-affordability deprivation in Türkiye (ILCS 2023–2025)"
+version: 1.0.0
+date-released: 2026-11-01
+authors:
+  - family-names: "Yılmaz"
+    given-names: "Salim"
+    affiliation: "Acıbadem Mehmet Ali Aydınlar University"
+    orcid: "https://orcid.org/0000-0003-2405-5084"
+  - family-names: "Günal"
+    given-names: "Ahmet Murat"
+    affiliation: "Haliç University"
+    orcid: "https://orcid.org/0000-0001-9109-1080"
+repository-code: "https://github.com/sy142/ilcs2023-2025-couple-earnings-meal-affordability"
+license: MIT
+keywords:
+  - food deprivation
+  - meal affordability
+  - female breadwinners
+  - dual-earner couples
+  - intrahousehold resource allocation
+  - earnings share
+  - Bayesian multilevel model
+  - EU-SILC
+  - Türkiye
