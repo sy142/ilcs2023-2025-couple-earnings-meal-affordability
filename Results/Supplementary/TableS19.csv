@@ -1,0 +1,30 @@
+Characteristic [p],Husband-only earner,"Dual-earner, by wife's share <0.40","Dual-earner, by wife's share 0.40–0.60","Dual-earner, by wife's share >0.60",Wife-only earner,"Dual-earner, share 0.05–0.15"
+"Household-years, n","12,076","3,097","2,447",617,631,613
+Wife,"","","","","",""
+"Full-time months, median (Q_1–Q_3)",0 (0–0),7 (3–12),12 (12–12),12 (12–12),12 (12–12),3 (0–6)
+"Part-time months, median (Q_1–Q_3)",0 (0–0),0 (0–0),0 (0–0),0 (0–0),0 (0–0),0 (0–2)
+"Full-time-equivalent months, median (Q_1–Q_3)",0.0 (0.0–0.0),8.0 (4.0–12.0),12.0 (12.0–12.0),12.0 (12.0–12.0),12.0 (12.0–12.0),4.0 (2.0–6.0)
+"Full-time-equivalent months ≥ 10, %",6.8,44.1,87.4,88.0,91.7,16.4
+"Full-time-equivalent months = 0, %",90.2,0.8,0.0,0.0,0.0,1.0
+"Weekly hours at interview, median (Q_1–Q_3) [b]",40 (30–50),45 (35–48),45 (40–48),45 (40–48),45 (40–50),40 (24–45)
+"Weekly hours ≥ 40 at interview, % [b]",62.9,73.5,88.8,87.9,90.7,52.4
+"Working at interview, n [b]","1,519","2,066","2,214",574,584,320
+Husband,"","","","","",""
+"Full-time months, median (Q_1–Q_3)",12 (12–12),12 (12–12),12 (12–12),8 (3–12),0 (0–0),12 (12–12)
+"Part-time months, median (Q_1–Q_3)",0 (0–0),0 (0–0),0 (0–0),0 (0–0),0 (0–0),0 (0–0)
+"Full-time-equivalent months, median (Q_1–Q_3)",12.0 (12.0–12.0),12.0 (12.0–12.0),12.0 (12.0–12.0),8.0 (4.0–12.0),0.0 (0.0–0.0),12.0 (12.0–12.0)
+"Full-time-equivalent months ≥ 10, %",90.6,91.1,87.5,44.2,10.7,91.7
+"Full-time-equivalent months = 0, %",0.0,0.0,0.1,0.0,87.0,0.0
+"Weekly hours at interview, median (Q_1–Q_3) [b]",48 (40–54),45 (40–50),45 (40–50),45 (40–50),45 (40–60),45 (40–50)
+"Weekly hours ≥ 40 at interview, % [b]",92.6,93.6,91.2,81.1,77.2,91.1
+"Working at interview, n [b]","11,382","2,909","2,248",448,109,585
+Dual-earner couples with a wife's share below 0.20,"","","","","",""
+"Wife's full-time-equivalent months ≤ 6: food deprivation, % (n)","",31.6 (837),"","","",""
+"Wife's full-time-equivalent months > 6: food deprivation, % (n)","",29.1 (287),"","","",""
+
+"Note: n unweighted; medians, quartiles and percentages weighted with the cross-sectional household weights. Full-time-equivalent months = full-time months + 0.5 × part-time months in the income year (FI260, FI270); the weight of 0.5 is an assumption of this study."
+"Note: [b] Main job, among spouses working at the interview (FI010 = 1–4); measured at the interview, not in the income year. –, fewer than 20 household-years;  [a], 20–50."
+"Note: Months recorded without own earnings, and earnings without recorded months: the wife has full-time-equivalent months > 0 in 1,410 husband-only earner couples (mostly unpaid family work); the wife has none in 23 and the husband none in 3 dual-earner couples; the husband has months > 0 in 78 wife-only earner couples."
+"Note: The two rows on couples with a share below 0.20 are shown in the <0.40 column; crude weighted prevalence of food deprivation (unweighted n)."
+"Note: [p] Added after the main results were seen; the expected directions were stated in the addendum of 1 November 2026 before the models were fitted."
+

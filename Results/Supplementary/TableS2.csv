@@ -1,0 +1,12 @@
+Step,2023,2024,2025,Total
+All household-years,"24,932","25,925","25,836","76,693"
+No co-resident spouse of the reference person,"6,509","6,883","6,891","20,283"
+Ambiguous spouse link or spouse not coded as spouse,23,21,20,64
+A spouse younger than 18,8,4,3,15
+Both spouses aged 65 or older,"1,868","2,060","2,091","6,019"
+A spouse without an individual record,24,8,19,51
+Negative net labor earnings of a spouse,57,31,53,141
+No positive net labor earnings in the couple,"2,487","2,508","2,559","7,554"
+Eligible couple households,"13,956","14,410","14,200","42,566"
+Outside common support,"7,683","8,095","7,920","23,698"
+Common-support sample (Q),"6,273","6,315","6,280","18,868"

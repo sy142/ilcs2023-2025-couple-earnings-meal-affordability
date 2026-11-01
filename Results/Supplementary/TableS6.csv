@@ -1,0 +1,15 @@
+Characteristic,Couples with a spouse without an individual record,Included couples,Standardized difference
+"Food deprivation, %",36.5,33.1,0.07
+Household income / year median,1.55,1.60,−0.04
+Children aged 0–5,0.24,0.41,−0.27
+Children aged 6–13,0.64,0.63,0.01
+Children aged 14–17,0.38,0.30,0.15
+Household size,4.4,4.0,0.26
+Age of wife,45.2,41.1,0.41
+Age of husband,47.7,44.6,0.29
+Wife's earnings / year median (where recorded),0.07,0.23,−0.41
+Husband's earnings / year median (where recorded),0.62,0.91,−0.30
+
+"Note: Weighted means; standardized difference, difference in means divided by the pooled standard deviation. Income ratios truncated at 10. Region and survey year are not shown (small cells)."
+"Note: No model variable had missing values among eligible couples (both spouses had individual records); complete-case analysis. Codes 98 and 99 did not occur in the variables used."
+

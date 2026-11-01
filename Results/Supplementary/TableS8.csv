@@ -1,0 +1,45 @@
+Model,Monitored parameters,Max R-hat,Min bulk ESS,Min tail ESS,Divergences,Max tree depth hits,Min E-BFMI
+Before income terms (M1),59,1.002,"3,481","6,204",0,0,0.67
+Main model (M2),66,1.001,"4,114","7,522",0,0,0.66
+Extended conditioning (M3),73,1.001,"3,724","6,873",0,0,0.67
+Husband's-status model (secondary),69,1.000,"8,084","15,345",0,0,0.65
+Year-deviation model (secondary),70,1.000,"7,073","13,851",0,0,0.66
+2023 only,62,1.001,"17,556","30,492",0,0,0.82
+2024 only,63,1.000,"19,139","35,985",0,0,0.84
+2025 only,63,1.000,"20,068","37,930",0,0,0.85
+Wage sample (no self-employment income),66,1.001,"3,602","6,674",0,0,0.65
+No unpaid family worker spouse,66,1.004,"1,306","2,665",0,0,0.64
+Single-couple households,66,1.002,"1,125","2,196",0,0,0.66
+All ages (both spouses ≥18),66,1.003,"1,174","2,076",0,0,0.65
+Excluding TR63 in all years,65,1.003,"1,308","2,403",0,0,0.66
+Earner structure matches current employment,66,1.005,"1,365","2,477",0,0,0.62
+Excluding dual earners with identical earnings [p],66,1.002,"1,235","2,191",0,0,0.64
+All eligible couples (no common-support restriction),66,1.001,"2,623","5,335",0,0,0.68
+"Common support with three categories (M, D, F) [p]",66,1.003,"1,216","1,918",0,0,0.59
+Earner threshold 5%/95%,66,1.004,"1,275","2,233",0,0,0.65
+Other income excluding imputed rent,66,1.002,"1,185","2,409",0,0,0.65
+Equivalized household income instead of E and O,63,1.005,"1,126","2,110",0,0,0.59
+"Share spline, 3 df",65,1.002,"1,362","2,608",0,0,0.65
+"Share spline, 5 df",67,1.002,"1,157","2,281",0,0,0.66
+"Share spline, fixed knots 0.25/0.5/0.75 [p]",66,1.005,"1,268","2,405",0,0,0.63
+"Share-spline coefficients prior N(0, 0.5²) [p]",66,1.003,"1,243","2,160",0,0,0.65
+"Share-spline coefficients prior N(0, 2²) [p]",66,1.003,"1,174","2,199",0,0,0.67
+"All coefficients prior N(0, 2.5²) [p]",66,1.005,890,"1,904",0,0,0.66
+"All coefficients prior N(0, 5²) [p]",66,1.003,"1,121","2,008",0,0,0.63
+Unweighted model,66,1.001,"3,358","6,576",0,0,0.59
+No linkage-chain intercept,65,1.004,846,"1,429",0,0,0.78
+Linkage: member signature only,66,1.005,"1,117","1,864",0,0,0.63
+Linkage: main rule + reference-person key,66,1.002,"1,179","2,309",0,0,0.66
+"Chain SD prior half-normal(0, 2)",66,1.004,"1,012","1,392",0,0,0.64
+"Chain SD prior half-normal(0, 5) [p]",66,1.002,"1,027","2,321",0,0,0.63
+Linkage: signature-only links within NUTS-2 [p],66,1.002,"1,155","2,445",0,0,0.68
+Weights scaled to Kish effective size [p],66,1.003,"1,174","2,214",0,0,0.65
+Work-intensity model (X1) [p],72,1.001,"3,612","7,003",0,0,0.68
+"Work-intensity model, fixed knots (X1) [p]",72,1.001,"3,885","7,207",0,0,0.69
+Other non-working adult model (X2) [p],73,1.001,"3,657","7,042",0,0,0.68
+Any other adult model (X2′) [p],73,1.001,"3,650","6,127",0,0,0.64
+
+"Note: 4 chains; 1,000 warm-up and 1,500 sampling iterations each (4,500 in M1–M3, the wage-sample, unweighted and all-eligible models and the four post hoc models of Section 12; 19,000 in the single-year models; 10,000 in the husband's-status model; 9,000 in the year-deviation model); target acceptance rate 0.9 and maximum tree depth 10; within-chain parallelization with a static partition. Criteria: R-hat ≤ 1.01, bulk and tail effective sample size (ESS) ≥ 400, no divergent transitions, E-BFMI > 0.3."
+"Note: Monte Carlo standard errors (MCSE) of the medians and interval limits of the comparisons and standardized probabilities were below 0.1 percentage points, and those of the posterior probabilities below 0.01, in M1–M3, the secondary models, the single-year models and the wage-sample, unweighted and all-eligible models; in the other sensitivity models, MCSE of interval limits were at most 0.2 points; in the post hoc models, they were below 0.1 points in the work-intensity models and at most 0.11 points (0.13 for comparisons relying on the share of 0.9) in the other-adult models."
+"Note: Monitored: coefficients, standard deviations and NUTS-2 intercepts. Linkage-chain intercepts were checked separately in M1–M3 and the two secondary models (11,192 parameters each; R-hat ≤ 1.002, ESS ≥ 9,329), not in the sensitivity models.  [p] Added after the main results were seen."
+

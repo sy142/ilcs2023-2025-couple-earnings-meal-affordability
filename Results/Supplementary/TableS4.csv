@@ -1,0 +1,21 @@
+Survey years and link type,Links,"Same NUTS-2, %","Same dwelling type, %","Same tenure, %","Same household size, %","Same education of both spouses, %"
+2023–2024,"","","","","",""
+Signature and couple key,"10,828",100.0 [a],97.8,97.2,100.0 [a],98.4
+Couple key only,"2,100",100.0 [a],96.8,96.4,19.9,97.1
+Signature only,"2,096",93.5,93.2,94.6,100.0 [a],79.0
+Reference-person key only,575,100.0 [a],100.0 [a],100.0 [a],21.9,14.9
+2023–2025,"","","","","",""
+Signature and couple key,"6,063",100.0 [a],95.5,94.3,100.0 [a],97.3
+Couple key only,"2,183",100.0 [a],93.1,91.6,15.8,94.9
+Signature only,"1,369",83.6,85.2,89.1,100.0 [a],62.9
+Reference-person key only,"1,077",100.0 [a],100.0 [a],100.0 [a],27.4,13.3
+2024–2025,"","","","","",""
+Signature and couple key,"11,163",100.0 [a],97.5,96.7,100.0 [a],98.9
+Couple key only,"2,127",100.0 [a],96.5,95.9,22.0,98.0
+Signature only,"2,233",92.6,92.5,93.7,100.0 [a],78.5
+Reference-person key only,549,100.0 [a],100.0 [a],100.0 [a],21.9,18.8
+
+"Note: Signature links: 12,924 (2023–2024), 7,432 (2023–2025) and 13,396 (2024–2025), identical to the source documentation. Main rule: signature or couple key; the reference-person key is used only in a sensitivity analysis."
+"Note: Links were combined into chains with at most one household per survey year, in a priority order fixed before link quality was examined: links confirmed by both keys, then signature-only links, then couple-key-only links, with adjacent years before 2023–2025. The 68 of 40,162 links that would have placed two households of the same year in one chain were dropped."
+"Note: [a] The variable is part of the matching key (or implied by it) and is not independent evidence. Education agreement is computed where both records have a reference couple."
+

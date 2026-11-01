@@ -1,0 +1,37 @@
+"Sample, year and earner structure",n,Events,Non-events,Kish n,"Weighted share, %","Linked to another year, %"
+"Eligible, 2023","","","","","",""
+Husband-only earner,"9,334","3,707","5,627","6,500",65.0,70.0
+Dual-earner,"4,093","1,037","3,056","3,004",30.8,72.8
+Wife-only earner,529,234,295,368,4.1,64.8
+"Eligible, 2024","","","","","",""
+Husband-only earner,"9,436","3,693","5,743","6,533",63.9,94.9
+Dual-earner,"4,405","1,052","3,353","3,236",31.8,95.5
+Wife-only earner,569,274,295,404,4.2,89.6
+"Eligible, 2025","","","","","",""
+Husband-only earner,"9,203","3,431","5,772","6,473",63.2,71.2
+Dual-earner,"4,394",794,"3,600","3,290",32.3,70.3
+Wife-only earner,603,225,378,439,4.5,65.2
+"Eligible, pooled 2023–2025","","","","","",""
+Husband-only earner,"27,973","10,831","17,142","19,503",64.1,78.8
+Dual-earner,"12,892","2,883","10,009","9,527",31.7,79.7
+Wife-only earner,"1,701",733,968,"1,208",4.3,73.3
+"Common support (Q), 2023","","","","","",""
+Husband-only earner,"4,051","1,395","2,656","2,970",64.4,62.2
+Dual-earner,"2,019",590,"1,429","1,501",32.3,64.0
+Wife-only earner,203,72,131,143,3.3,56.7
+"Common support (Q), 2024","","","","","",""
+Husband-only earner,"4,045","1,425","2,620","2,955",64.2,85.4
+Dual-earner,"2,060",553,"1,507","1,529",32.5,86.7
+Wife-only earner,210,86,124,156,3.3,79.0
+"Common support (Q), 2025","","","","","",""
+Husband-only earner,"3,980","1,175","2,805","2,958",63.6,62.6
+Dual-earner,"2,082",430,"1,652","1,591",32.9,62.5
+Wife-only earner,218,62,156,165,3.5,63.3
+"Common support (Q), pooled 2023–2025","","","","","",""
+Husband-only earner,"12,076","3,995","8,081","8,882",64.1,70.1
+Dual-earner,"6,161","1,573","4,588","4,619",32.6,71.1
+Wife-only earner,631,220,411,463,3.4,66.4
+
+"Note: Events, household-years in which the household could not afford a meal with meat, chicken or fish every second day. Kish n = (Σw) [2]/Σw [2]. Weighted share within the survey year (pooled rows: within the pooled sample)."
+"Note: Linked: unweighted share of household-years whose linkage chain (main rule) contains another record of the same sample."
+

@@ -1,0 +1,23 @@
+Group,n,"Observed, %","Replicated, % (95% interval)",P(rep ≥ obs)
+Husband-only earner 2023,"4,051",35.6,"34.8 (32.7, 37.0)",0.21
+Husband-only earner 2024,"4,045",35.5,"35.0 (33.1, 37.0)",0.35
+Husband-only earner 2025,"3,980",28.1,"27.8 (25.8, 29.7)",0.35
+Dual-earner 2023,"2,019",29.7,"27.3 (25.1, 29.9)",0.04
+Dual-earner 2024,"2,060",27.6,"27.6 (25.3, 30.2)",0.51
+Dual-earner 2025,"2,082",20.7,"21.5 (19.5, 23.6)",0.75
+Wife-only earner 2023,203,36.7,"37.7 (30.3, 46.4)",0.60
+Wife-only earner 2024,210,43.4,"36.7 (29.2, 43.8)",0.03
+Wife-only earner 2025,218,30.0,"29.9 (22.6, 37.7)",0.50
+Husband-only earner,"12,076",33.1,"32.5 (31.1, 34.1)",0.25
+"Dual-earner, share [0, 0.2)","1,124",31.0,"30.4 (26.7, 34.0)",0.37
+"Dual-earner, share [0.2, 0.4)","1,973",25.6,"25.8 (23.5, 28.7)",0.56
+"Dual-earner, share [0.4, 0.6)","2,440",23.4,"22.2 (19.5, 24.7)",0.18
+"Dual-earner, share [0.6, 0.8)",502,27.1,"27.3 (22.8, 32.5)",0.53
+"Dual-earner, share [0.8, 1]",122,35.6,"31.6 (20.9, 41.5)",0.24
+Wife-only earner,631,36.5,"34.6 (29.1, 40.9)",0.28
+Two-record chains with the same outcome in both records,"3,506",85.6,"80.4 (79.0, 81.9)",0.00
+Three-record chains with the same outcome in all records,"2,085",74.5,"70.2 (67.7, 72.3)",0.00
+
+"Note: Weighted prevalence (earner structure and share rows) or unweighted share of two- and three-record chains with the same outcome in all records. 400 posterior draws."
+"Note: Outcomes were replicated with posterior NUTS-2 intercepts and new linkage-chain intercepts drawn from N(0, σ [2]_chain); the last rows check the modeled dependence between repeated records."
+

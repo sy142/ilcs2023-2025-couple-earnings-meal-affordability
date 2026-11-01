@@ -1,0 +1,16 @@
+Linkage rule and sample,"Chains by number of records, n 1 record","Chains by number of records, n 2 records","Chains by number of records, n 3 records","Two-record chains, % Neither deprived","Two-record chains, % One deprived","Two-record chains, % Both deprived"
+Main rule,"","","","","",""
+Eligible,"9,002","7,791","5,994",59.5,13.4,27.0
+Common support (Q),"5,601","3,506","2,085",61.8,14.4,23.8
+Signature only,"","","","","",""
+Eligible,"13,511","7,998","4,353",59.5,13.8,26.7
+Common support (Q),"7,540","3,459","1,470",61.5,14.7,23.8
+Main rule + reference-person key,"","","","","",""
+Eligible,"8,500","7,688","6,230",59.2,14.0,26.9
+Common support (Q),"5,451","3,506","2,135",61.4,14.9,23.6
+"Main rule, signature-only links within NUTS-2","","","","","",""
+Eligible,"9,304","7,820","5,874",59.5,13.4,27.1
+Common support (Q),"5,660","3,508","2,064",61.6,14.5,23.9
+
+"Note: Patterns are unweighted shares of two-record chains within each sample (chains linked within Q for the Q rows)."
+

@@ -1,0 +1,27 @@
+Software,Version,Role
+R,4.6.1,Statistical computing environment
+brms,2.23.0,"Bayesian multilevel logistic models (Stan interface, formula, priors, posterior draws)"
+cmdstanr,0.9.0,CmdStan backend for brms
+rstan,2.32.7,Required by brms to build the fitted-model object
+posterior,1.7.0,"Posterior draws, convergence diagnostics (R-hat, ESS) and Monte Carlo standard errors"
+survey,4.5,Survey-weighted sensitivity model and linkage-chain bootstrap replicate weights
+nnet,7.3-20,Weighted multinomial model for the common support
+statmod,1.5.2,Gauss–Hermite quadrature for marginalizing over linkage-chain intercepts
+splines,4.6.1,Natural cubic spline bases (base R)
+CmdStan,2.40.0,Stan sampler (No-U-Turn Hamiltonian Monte Carlo)
+data.table,1.18.6.1,Data management (auxiliary)
+arrow,26.0.0,Parquet storage (auxiliary)
+readxl,1.5.0.1,Reading the source workbook (auxiliary)
+flextable,0.10.3,Word tables (auxiliary)
+officer,0.7.7,Word documents (auxiliary)
+openxlsx,4.2.9,Excel tables (auxiliary)
+future,1.80.0,Parallel computation (auxiliary)
+furrr,0.4.0,Parallel map (auxiliary)
+jsonlite,2.0.0,JSON output (auxiliary)
+Python,3.13.16,Figures
+matplotlib,3.11.2,Figures
+NumPy,2.5.4,Arrays (figures)
+pandas,3.0.6,Reading figure data
+openpyxl,3.1.5,Excel subscripts (auxiliary)
+fonttools,4.67.0,Font embedding in PDF (auxiliary)
+Pillow,12.3.0,TIFF output (auxiliary)

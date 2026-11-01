@@ -1,0 +1,21 @@
+Variable,Definition,Source variables
+HE090 (outcome),"1 if the household cannot afford a meal with meat, chicken or fish (or vegetarian equivalent) every second day (HE090 = 2)",HE090
+"E_wife, E_husband","Net labor earnings of each spouse in the income year: FG010 + FG020 + FG030 + FG040 (cash and in-kind wages, cash and in-kind self-employment income); blank = 0 for spouses with an individual record; negative values kept","FG010, FG020, FG030, FG040; individual record indicator"
+s,"Wife's share of the couple's earnings, E_wife / (E_wife + E_husband); defined only for dual-earner couples. Modeled with a natural cubic spline f(s): interior knots at the weighted quartiles of s among dual-earner couples in Q, boundary knots 0 and 1, centered so that f(0.5) = 0",FG010–FG040
+G,"Earner structure: husband-only (E_wife = 0, E_husband > 0), dual-earner (both > 0), wife-only (E_wife > 0, E_husband = 0)",FG010–FG040
+O,"Other household income: HG110 − (E_wife + E_husband); includes pensions, transfers, other members' earnings, imputed rent and deductions; may be negative","HG110, FG010–FG040"
+m_t,Weighted (HB040) median of household disposable income (HG110) across all households in survey year t,"HG110, HB040"
+"asinh(E/m_t), asinh(O/m_t)",Inverse hyperbolic sine of couple earnings and other income relative to m_t; natural splines with 4 and 3 df,"HG110, FG010–FG040"
+Age of wife / husband,Age at 31 December of the income year (FK070); natural splines with 3 df,FK070
+Education of wife / husband,"Last completed level (FE030): no diploma (0–1), primary or 8-year basic (2–3), lower secondary (4), upper secondary (5–6), tertiary (7–10)",FE030
+"Children aged 0–5, 6–13, 14–17","Number of household members aged 0–5 (including those born in the survey year), 6–13 and 14–17",FK070
+"Other adults 18–64, ≥65",Number of members other than the spouses aged 18–64 and ≥65,FK070
+"Year, NUTS-2, NUTS-1","Survey year (2023–2025); NUTS-2 (HB031, varying intercept); NUTS-1 (HB030, common-support model only)","survey year, HB031, HB030"
+Activity limitation,"Health-related limitation in usual activities for at least 6 months (FS030 = 1 or 2), each spouse (M3)",FS030
+Chronic illness,"Chronic illness (FS020 = 1), each spouse (M3)",FS020
+Tenure,"Owner, tenant, employer-provided housing, rent-free (HH020; M3)",HH020
+Husband's status in income year (wife-only earners),"Status in which the husband spent most months of the income year among retired (FI290), unemployed (FI280), other inactive (FI310 + FI300) and worked (FI260 + FI270); ties: retired, unemployed, other inactive, worked. In wife-only earner couples, “worked” means worked without own positive net earnings","FI280, FI290, FI300, FI310, FI260, FI270"
+Unpaid family worker,Main job status unpaid family worker at interview (FI120 = 5),FI120
+Wage sample,Neither spouse has self-employment income (FG030 = FG040 = 0),"FG030, FG040"
+Earner structure matches current employment,Current employment at interview (FI010 = 1–4) matches the earner structure in the income year,FI010
+Linkage chain,"Records of the same household in different survey years linked by member signature (birth year, birth month and sex of all members) or couple key (spouses' birth year, birth month, sex and NUTS-2); varying intercept","FK080, FK075, FK090, HB031"

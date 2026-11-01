@@ -1,0 +1,26 @@
+Quantity [p],Other adult not working at the interview (A) No,Other adult not working at the interview (A) Yes,Other adult not working at the interview (A) Yes − no,Any other adult (A′) No,Any other adult (A′) Yes,Any other adult (A′) Yes − no
+Household-years (events),"","","","","",""
+Husband-only earner,"8,757 (2,894)","3,319 (1,101)","","6,827 (2,398)","5,249 (1,597)",""
+Dual-earner,"4,697 (1,113)","1,464 (460)","","3,885 (932)","2,276 (641)",""
+Wife-only earner,445 (142),186 (78),"",344 (112),287 (108),""
+E_3b Husband-only vs. husband earns 90%,"","","","","",""
+Estimate (95% CrI),"−2.4 (−5.0, 0.2)","−3.5 (−7.8, 0.5)","−1.2 (−5.8, 3.3)","−2.1 (−5.1, 0.8)","−3.3 (−6.8, 0.1)","−1.2 (−5.4, 3.0)"
+P(Δ < −2),0.61,0.76,"",0.53,0.78,""
+P(|Δ| ≤ 2),0.39,0.23,"",0.46,0.22,""
+P(Δ > 2),0.00,0.00,"",0.00,0.00,""
+P(difference > 0),"","",0.31,"","",0.29
+E_4 Wife-only vs. husband-only (derived),"","","","","",""
+Estimate (95% CrI),"3.8 (−0.4, 8.2)","5.8 (−0.2, 11.9)","2.0 (−4.8, 8.8)","3.8 (−1.1, 8.9)","5.5 (0.4, 10.7)","1.7 (−5.1, 8.5)"
+P(Δ < −2),0.00,0.00,"",0.01,0.00,""
+P(|Δ| ≤ 2),0.20,0.10,"",0.23,0.09,""
+P(Δ > 2),0.79,0.89,"",0.76,0.91,""
+P(difference > 0),"","",0.71,"","",0.68
+"Interaction with the husband-only earner category, logit scale (95% CrI)","","","−0.28 (−0.70, 0.14)","","","−0.31 (−0.72, 0.09)"
+
+"Note: A = 1 if a household member other than the reference couple, aged 18 or older, completed the individual questionnaire and was not working at the interview (FI010 not 1–4); 54 members aged 18 or older without an individual questionnaire (49 households) were not counted as not working. A′ = 1 if any other member aged 18 or older lived in the household."
+"Note: X2 = M2 + A + A × (husband-only, wife-only and share-spline terms); X2′ uses A′. Comparisons standardized over the households in each group (A = 0, A = 1) with their own covariates; the difference is computed from the same draws."
+"Note: Prespecified criterion for an interpretation in favor of the time channel: |E_3b| smaller when A = 1 and a 95% interval of the difference that excludes zero."
+"Note: Monte Carlo standard errors of the medians and interval limits of the reported quantities are at most 0.11 points (0.13 including the comparisons that rely on p_D(0.9)), slightly above the 0.1-point criterion used for the main models."
+"Note: X2: max R-hat 1.001, min ESS 3,657, 0 divergent transitions, min E-BFMI 0.68; X2′: max R-hat 1.001, min ESS 3,650, 0 divergent transitions, min E-BFMI 0.64."
+"Note: [p] Added after the main results were seen; the expected directions were stated in the addendum of 1 November 2026 before the models were fitted."
+

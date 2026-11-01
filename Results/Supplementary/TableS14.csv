@@ -1,0 +1,62 @@
+Characteristic,Husband-only earner,"Dual-earner, by wife's share <0.40","Dual-earner, by wife's share 0.40–0.60","Dual-earner, by wife's share >0.60",Wife-only earner
+"Household-years, n","15,897","3,221","2,905",605,"1,070"
+"Weighted share, %",64.0,15.4,12.6,2.9,5.1
+"Food deprivation, %",42.1,21.5,15.2,21.3,46.1
+"Income / year median, median (Q_1–Q_3)","","","","",""
+Couple's net labor earnings,0.57 (0.38–0.95),1.60 (0.91–3.00),1.99 (1.26–2.50),1.74 (0.84–2.61),0.21 (0.14–0.41)
+Other household income,0.20 (0.07–0.49),0.20 (0.07–0.48),0.16 (0.02–0.32),0.31 (0.09–0.73),0.74 (0.47–1.19)
+"Age, years, median (Q_1–Q_3)","","","","",""
+Wife,36 (30–47),35 (30–41),35 (30–42),38 (32–46),53 (47–58)
+Husband,40 (34–51),38 (33–43),38 (32–44),41 (34–50),58 (53–63)
+"Education of wife, %","","","","",""
+No diploma,22.7,7.6,4.1,–,19.7
+Primary or 8-year basic,43.0,24.1,12.5,14.3,44.9
+Lower secondary,8.3,4.0,2.5,–,6.2
+Upper secondary,18.3,20.4,13.1,14.2,14.2
+Tertiary,7.7,43.8,67.8,62.6,15.0
+"Education of husband, %","","","","",""
+No diploma,5.4,1.7,1.3 [a],–,8.7
+Primary or 8-year basic,41.9,23.2,15.5,21.3,44.6
+Lower secondary,10.2,6.5,4.2,–,10.7
+Upper secondary,25.9,23.1,16.2,23.9,21.0
+Tertiary,16.6,45.5,62.8,46.1,14.9
+"Other household members, % with ≥1","","","","",""
+Children aged 0–5,49.2,39.5,29.8,24.0,9.4
+Children aged 6–13,51.8,47.5,38.9,35.3,18.1
+Children aged 14–17,22.5,20.8,18.9,20.4,19.7
+Other adults aged 18–64,26.3,16.4,12.2,26.5,63.8
+Other adults aged ≥65,4.2,3.0,2.7,3.9 [a],5.8
+"Region (NUTS-1), %","","","","",""
+Istanbul,14.4,23.5,16.2,28.7,22.3
+West Marmara,3.9,4.5,5.4,5.4 [a],6.0
+Aegean,10.7,14.6,17.2,13.6,11.5
+East Marmara,9.0,11.6,11.5,7.6 [a],7.1
+West Anatolia,9.5,10.8,11.0,7.4 [a],7.9
+Mediterranean,10.3,10.6,12.3,11.6,13.6
+Central Anatolia,4.4,3.3,4.8,2.7 [a],5.7
+West Black Sea,4.8,4.9,5.5,7.2,6.6
+East Black Sea,3.0,4.7,5.4,6.1 [a],5.5
+Northeast Anatolia,5.5,2.0,2.4,–,–
+Central East Anatolia,7.7,2.9,2.7,–,–
+Southeast Anatolia,16.8,6.6,5.7,5.5,6.8
+"Survey year, %","","","","",""
+2023,33.9,32.0,31.0,32.5,32.1
+2024,33.7,34.9,34.2,32.2,33.6
+2025,32.4,33.2,34.8,35.4,34.3
+"Health at the interview (M3 covariates), %","","","","",""
+Wife: activity limitation,22.3,12.5,13.2,18.8,37.6
+Husband: activity limitation,18.0,10.5,10.6,16.6,50.6
+Wife: chronic illness,33.9,23.4,24.5,32.5,57.5
+Husband: chronic illness,28.4,20.1,20.7,26.2,68.5
+"Housing tenure (M3 covariate), %","","","","",""
+Owner,49.2,42.5,47.4,45.8,65.7
+Tenant,32.6,40.2,41.3,37.8,21.6
+Employer-provided,1.2,2.3,1.7,–,–
+Rent-free,17.0,15.0,9.6,–,–
+
+"Note: n, unweighted counts; percentages and medians are weighted with household weights."
+"Note: Income is expressed as a ratio to the weighted median household disposable income of each survey year."
+"Note: Share groups are descriptive; the models treat the wife's share as continuous."
+"Note: –, suppressed (fewer than 20 household-years, or a second category suppressed so that the first cannot be derived from the column total);  [a] based on 20–50 household-years."
+"Note: Cells suppressed in Table 1 are also suppressed here, and vice versa, so that suppressed values cannot be derived from Table S13."
+

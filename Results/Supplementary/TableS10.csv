@@ -1,0 +1,16 @@
+Analysis,Question addressed,n,E_1 [†],E_2 [†],E_3a [†],E_3b,E_4
+Main model (M2),,"18,868","−0.3 (−4.2, 3.6)","0.4 (−5.5, 6.8)","1.4 (−5.6, 8.1)","−2.7 (−5.0, −0.4)","4.5 (0.9, 8.3)"
+Unweighted model,Survey weights in the likelihood,"18,868","0.1 (−3.7, 3.9)","0.5 (−5.4, 6.8)","0.9 (−5.8, 7.5) [m]","−2.6 (−4.9, −0.3)","4.1 (0.6, 7.8)"
+Survey-weighted model,Design-based variance with available design information,"18,868","−0.8 (−6.5, 5.0)","1.2 (−8.4, 10.7)","0.2 (−9.8, 10.2) [m]","−3.5 (−6.4, −0.6)","4.9 (0.5, 9.2)"
+No linkage-chain intercept,Repeated households,"18,868","−0.6 (−5.0, 4.2)","1.1 (−6.1, 9.1) [m]","0.4 (−7.7, 7.9) [m]","−3.5 (−6.0, −1.1)","5.1 (1.9, 8.4)"
+Linkage: member signature only,Linkage rule,"18,868","0.0 (−3.9, 4.3)","0.8 (−5.4, 7.6)","0.1 (−7.4, 6.8) [m]","−3.0 (−5.4, −0.6)","3.8 (0.3, 7.5)"
+Linkage: main rule + reference-person key,Linkage rule,"18,868","−0.1 (−3.9, 3.9)","0.8 (−5.3, 7.1)","1.0 (−5.6, 7.7) [m]","−2.6 (−4.9, −0.3)","4.5 (0.9, 8.3)"
+"Chain SD prior half-normal(0, 2)",Prior on between-chain dependence,"18,868","−0.3 (−4.1, 3.7)","0.5 (−5.5, 6.8)","1.4 (−5.4, 8.1)","−2.7 (−5.0, −0.3)","4.6 (0.9, 8.4)"
+"Chain SD prior half-normal(0, 5) [p]",Prior–data conflict on chain SD,"18,868","−0.3 (−4.1, 3.7)","0.4 (−5.7, 6.7)","1.4 (−5.7, 8.4)","−2.7 (−5.1, −0.3)","4.6 (0.8, 8.4)"
+Linkage: signature-only links within NUTS-2 [p],Linkage rule,"18,868","−0.3 (−4.2, 3.7)","0.5 (−5.6, 7.0)","1.3 (−5.8, 8.3)","−2.7 (−5.1, −0.4)","4.6 (0.7, 8.5)"
+Weights scaled to Kish effective size [p],Precision of the weighted pseudo-posterior,"18,868","−0.3 (−5.0, 4.4)","0.5 (−7.1, 8.4)","0.5 (−8.0, 8.8)","−3.3 (−6.0, −0.5)","4.3 (0.3, 8.4)"
+
+"Note: Percentage points; posterior median (95% CrI), except the survey-weighted model: estimate (95% confidence interval, normal approximation with the standard error from 1,000 linkage-chain bootstrap replicate weights). The survey-weighted model uses the available design information; it is not a full design-based analysis."
+"Note: [m] Differs materially from the main model (absolute difference > 1 point or a different most probable ROPE region). For E_3a, flags without a difference > 1 point arise because P(|Δ| ≤ 2) and P(Δ > 2) are nearly equal in the main model.  [p] Added after the main results were seen."
+"Note: [†] Relies on p_D(0.9) (74 dual-earner household-years in Q with a wife's share of 0.85–0.95)."
+
