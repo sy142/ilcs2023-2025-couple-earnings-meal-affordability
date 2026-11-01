@@ -1,0 +1,5 @@
+# Changelog
+
+## v1.0.0 (2026-11-01)
+
+First public release. The archive contains the R and Python analysis code (`Codes/`); Tables 1–2 and the 21 supplementary tables as Word and CSV files, with all tables in one workbook; the machine-readable results (`Results/sayilar.json` and the estimate files); the 9 figures (Figures 1–3 and S1–S6 as PNG, PDF and TIFF) with legibility previews and the aggregated data from which they are drawn (`Figures/figur_verileri/`); aggregated audit files, environment records and run logs; and the analysis plan of 28 October 2026 with its addendum of 1 November 2026 (in Turkish). The models were not re-run for this release: the tables were rewritten from the cached model fits so that the file names follow the final numbering of the supplementary tables, the diagnostics of the four post hoc models were added to Table S8, and a note of Table S19 and a block heading of Table S20 were corrected; no estimate changed (`Results/denetim/tablo_yeniden_yazim_farklari.csv`). The archive contains no microdata.
