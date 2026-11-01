@@ -1,0 +1,22 @@
+{
+  "kadin": {
+    "knots": [5, 6],
+    "sinir": [0, 12],
+    "kural": "ara",
+    "adaylar": {
+      "tum": [0, 6],
+      "pozitif": [10, 12],
+      "ara": [5, 6]
+    }
+  },
+  "koca": {
+    "knots": [6, 8],
+    "sinir": [0, 12],
+    "kural": "ara",
+    "adaylar": {
+      "tum": [12, 12],
+      "pozitif": [12, 12],
+      "ara": [6, 8]
+    }
+  }
+}

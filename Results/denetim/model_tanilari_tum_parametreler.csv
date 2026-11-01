@@ -1,0 +1,6 @@
+model,parametre_grubu,parametre,rhat_max,ess_bulk_min,ess_tail_min,rhat_buyuk_101,ess_400_alti
+M1,zincir düzeyi standart normal sapmalar (z_2),11192,1.0023,25001,9329,0,0
+M2,zincir düzeyi standart normal sapmalar (z_2),11192,1.0021,26259,9582,0,0
+M3,zincir düzeyi standart normal sapmalar (z_2),11192,1.002,25312,9385,0,0
+M2_Fdurum,zincir düzeyi standart normal sapmalar (z_2),11192,1.001,61180,22185,0,0
+M2_yil,zincir düzeyi standart normal sapmalar (z_2),11192,1.001,56617,20005,0,0

@@ -1,0 +1,12 @@
+kontrol,tum,F
+"yalnız bu sınır: M, alt",5.4,4.6
+"yalnız bu sınır: M, ust",13.3,2.6
+"yalnız bu sınır: D_dusuk, alt",10.3,44.1
+"yalnız bu sınır: D_dusuk, ust",6.9,1
+"yalnız bu sınır: D_orta, alt",7.4,15.6
+"yalnız bu sınır: D_orta, ust",5.8,1.2
+"yalnız bu sınır: D_yuksek, alt",19.6,4.8
+"yalnız bu sınır: D_yuksek, ust",1.8,2.2
+"yalnız bu sınır: F, alt",21.7,1
+"yalnız bu sınır: F, ust",6.6,43.7
+D_yüksek sınır hesabından çıkarılınca toplam dışlama,45.3,59.8

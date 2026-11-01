@@ -1,0 +1,11 @@
+grup,n,olay,olay_yok,kish_n,agirlikli_pay,kural,saglandi
+D,6161,1573,4588,4618.7,32.55,"",
+F,631,220,411,463,3.37,"köşe: n ≥ 200, olay ≥ 50, olay yok ≥ 50",TRUE
+M,12076,3995,8081,8881.7,64.08,"köşe: n ≥ 200, olay ≥ 50, olay yok ≥ 50",TRUE
+D_dusuk,613,193,420,468,3.13,çapa: n ≥ 200,TRUE
+D_orta,1564,334,1230,1146.7,8.19,çapa: n ≥ 200,TRUE
+D_yuksek,74,21,53,59.7,0.33,çapa: n ≥ 200,FALSE
+F_calisti_kazancsiz,75,21,54,53.9,0.43,koca durumu: n ≥ 50,TRUE
+F_diger_faal_olmayan,77,45,32,56.1,0.38,koca durumu: n ≥ 50,TRUE
+F_emekli,339,88,251,250.1,1.87,koca durumu: n ≥ 50,TRUE
+F_issiz,140,66,74,104.8,0.69,koca durumu: n ≥ 50,TRUE
