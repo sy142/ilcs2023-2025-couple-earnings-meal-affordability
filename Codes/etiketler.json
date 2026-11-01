@@ -1,0 +1,176 @@
+{
+  "sonuc": {
+    "kisa": "Food deprivation",
+    "uzun": "Inability to afford a meal with meat, chicken or fish (or vegetarian equivalent) every second day"
+  },
+  "G": {
+    "M": "Husband-only earner",
+    "D": "Dual-earner",
+    "F": "Wife-only earner"
+  },
+  "G_uzun": {
+    "M": "Only the husband has positive net labor earnings",
+    "D": "Both spouses have positive net labor earnings",
+    "F": "Only the wife has positive net labor earnings"
+  },
+  "pay_grubu": {
+    "1": "<0.40",
+    "2": "0.40–0.60",
+    "3": ">0.60"
+  },
+  "E": {
+    "E1": "Concentration",
+    "E2": "Direction (wife vs. husband earns 90%)",
+    "E3a": "Wife-only vs. wife earns 90%",
+    "E3b": "Husband-only vs. husband earns 90%",
+    "E4": "Wife-only vs. husband-only (derived)"
+  },
+  "E_kisa": {
+    "E1": "Concentration",
+    "E2": "Direction",
+    "E3a": "Wife-only vs. wife earns 90%",
+    "E3b": "Husband-only vs. husband earns 90%",
+    "E4": "Wife-only vs. husband-only"
+  },
+  "E_mathtext": {
+    "E1": "$E_{1}$",
+    "E2": "$E_{2}$",
+    "E3a": "$E_{\\mathrm{3a}}$",
+    "E3b": "$E_{\\mathrm{3b}}$",
+    "E4": "$E_{4}$"
+  },
+  "E_tablo": {
+    "E1": "E_{1} Concentration",
+    "E2": "E_{2} Direction",
+    "E3a": "E_{3a} Wife-only vs. wife earns 90%",
+    "E3b": "E_{3b} Husband-only vs. husband earns 90%",
+    "E4": "E_{4} Wife-only vs. husband-only (derived)"
+  },
+  "model": {
+    "M1": "Before income terms (M1)",
+    "M2": "Main model (M2)",
+    "M3": "Extended conditioning (M3)"
+  },
+  "koca_durumu": {
+    "emekli": "Retired",
+    "issiz": "Unemployed",
+    "diger": "Other inactive",
+    "calisti": "Worked, no own earnings"
+  },
+  "koca_durumu_uzun": {
+    "emekli": "Retired for most of the income year",
+    "issiz": "Unemployed for most of the income year",
+    "diger": "Other inactive for most of the income year",
+    "calisti": "Worked for most of the income year without own positive net earnings"
+  },
+  "duyarlilik": {
+    "M2": "Main model (M2)",
+    "A1_2025": "2025 only",
+    "A2_2023": "2023 only",
+    "A2_2024": "2024 only",
+    "A3_ucret": "Wage sample (no self-employment income)",
+    "A4_ucretsiz_aile_yok": "No unpaid family worker spouse",
+    "A5_tek_cift": "Single-couple households",
+    "A6_tum_yaslar": "All ages (both spouses ≥18)",
+    "A7_TR63_yok": "Excluding TR63 in all years",
+    "A8_durum_uyumu": "Earner structure matches current employment",
+    "A9_tum_uygun": "All eligible couples (no common-support restriction)",
+    "B10_agirliksiz": "Unweighted model",
+    "B11_survey": "Survey-weighted model",
+    "B12_zincirsiz": "No linkage-chain intercept",
+    "B13_imza": "Linkage: member signature only",
+    "B13_ana_reis": "Linkage: main rule + reference-person key",
+    "B14_sigma2": "Chain SD prior half-normal(0, 2)",
+    "C15_esik5": "Earner threshold 5%/95%",
+    "C16_O_izk": "Other income excluding imputed rent",
+    "C17_esdeger": "Equivalized household income instead of E and O",
+    "C18_fs_df3": "Share spline, 3 df",
+    "C18_fs_df5": "Share spline, 5 df",
+    "M3": "Extended conditioning (M3)",
+    "B14b_sigma5": "Chain SD prior half-normal(0, 5)",
+    "A10_destek3": "Common support with three categories (M, D, F)",
+    "A11_esit_haric": "Excluding dual earners with identical earnings",
+    "B13_ana_bolge": "Linkage: signature-only links within NUTS-2",
+    "B15_kish": "Weights scaled to Kish effective size",
+    "C18_fs_sabit": "Share spline, fixed knots 0.25/0.5/0.75",
+    "C19_capa25": "Anchors 0.25/0.75 instead of 0.1/0.9",
+    "C19_capa20": "Anchors 0.2/0.8 instead of 0.1/0.9",
+    "C20_fs_prior05": "Share-spline coefficients prior N(0, 0.5²)",
+    "C20_fs_prior2": "Share-spline coefficients prior N(0, 2²)",
+    "C21_b25": "All coefficients prior N(0, 2.5²)",
+    "C21_b5": "All coefficients prior N(0, 5²)"
+  },
+  "egitim": {
+    "1": "No diploma",
+    "2": "Primary or 8-year basic",
+    "3": "Lower secondary",
+    "4": "Upper secondary",
+    "5": "Tertiary"
+  },
+  "bolge": {
+    "TR1": "Istanbul",
+    "TR2": "West Marmara",
+    "TR3": "Aegean",
+    "TR4": "East Marmara",
+    "TR5": "West Anatolia",
+    "TR6": "Mediterranean",
+    "TR7": "Central Anatolia",
+    "TR8": "West Black Sea",
+    "TR9": "East Black Sea",
+    "TRA": "Northeast Anatolia",
+    "TRB": "Central East Anatolia",
+    "TRC": "Southeast Anatolia"
+  },
+  "notlar": {
+    "n": "n, unweighted counts; percentages and medians are weighted with household weights.",
+    "kucuk": "–, suppressed (fewer than 20 household-years, or a second category suppressed so that the first cannot be derived from the column total); ^{a} based on 20–50 household-years.",
+    "oran": "Income is expressed as a ratio to the weighted median household disposable income of each survey year.",
+    "pay": "Share groups are descriptive; the models treat the wife's share as continuous.",
+    "Q": "Common-support sample (Q): see Methods."
+  },
+  "duyarlilik_soru": {
+    "A1_2025": "Single period, no linkage needed",
+    "A2_2023": "Single period",
+    "A2_2024": "Single period",
+    "A3_ucret": "Earnings attributed to one spouse in family businesses",
+    "A4_ucretsiz_aile_yok": "Unpaid family work",
+    "A5_tek_cift": "Earnings of other couples in the household",
+    "A6_tum_yaslar": "Older couples",
+    "A7_TR63_yok": "Common geographic coverage",
+    "A8_durum_uyumu": "Stable employment arrangement",
+    "A9_tum_uygun": "Restriction to common support",
+    "B10_agirliksiz": "Survey weights in the likelihood",
+    "B11_survey": "Design-based variance with available design information",
+    "B12_zincirsiz": "Repeated households",
+    "B13_imza": "Linkage rule",
+    "B13_ana_reis": "Linkage rule",
+    "B14_sigma2": "Prior on between-chain dependence",
+    "C15_esik5": "Definition of single-earner couples",
+    "C16_O_izk": "Imputed rent in other income",
+    "C17_esdeger": "Form of income adjustment",
+    "C18_fs_df3": "Flexibility of the share curve",
+    "C18_fs_df5": "Flexibility of the share curve",
+    "M3": "Health and tenure conditioning",
+    "B14b_sigma5": "Prior–data conflict on chain SD",
+    "A10_destek3": "Restriction to common support",
+    "A11_esit_haric": "Heaping at equal earnings",
+    "B13_ana_bolge": "Linkage rule",
+    "B15_kish": "Precision of the weighted pseudo-posterior",
+    "C18_fs_sabit": "Knot placement",
+    "C19_capa25": "Extrapolation beyond observed shares",
+    "C19_capa20": "Extrapolation beyond observed shares",
+    "C20_fs_prior05": "Prior dependence of the 0.9 anchor",
+    "C20_fs_prior2": "Prior dependence of the 0.9 anchor",
+    "C21_b25": "Prior on coefficients",
+    "C21_b5": "Prior on coefficients"
+  },
+  "duyarlilik_kisa": {
+    "M2": "Main model (M2)",
+    "A1_2025": "2025 only",
+    "A3_ucret": "Wage sample",
+    "B10_agirliksiz": "Unweighted model",
+    "B11_survey": "Survey-weighted model",
+    "A9_tum_uygun": "All eligible couples"
+  },
+  "G_tablo1_D": "Dual-earner, by wife's share"
+}
