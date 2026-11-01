@@ -1,0 +1,8 @@
+model,kontrol,grup,n,gozlenen,rep_medyan,rep_alt,rep_ust,ppp,tekrar
+M2,zincir_ici_ayni_sonuc,iki kayıtlı zincirler,3506,85.5675984027382,80.405019965773,79.0059897318882,81.9459498003423,0,yeni zincir etkileri
+B10_agirliksiz,zincir_ici_ayni_sonuc,iki kayıtlı zincirler,3506,85.5675984027382,81.1466058185967,79.5771534512265,82.5470621791215,0,yeni zincir etkileri
+B12_zincirsiz,zincir_ici_ayni_sonuc,iki kayıtlı zincirler,3506,85.5675984027382,64.8174557900742,63.2608385624644,66.5145464917285,0,zincir etkisi yok (kayıtlar bağımsız)
+B13_imza,zincir_ici_ayni_sonuc,iki kayıtlı zincirler,3459,85.2847643827696,80.4856895056375,78.8941890719861,81.9890141659439,0,yeni zincir etkileri
+B13_ana_reis,zincir_ici_ayni_sonuc,iki kayıtlı zincirler,3506,85.0827153451227,80.2053622361666,78.7792355961209,81.6329150028523,0,yeni zincir etkileri
+B14_sigma2,zincir_ici_ayni_sonuc,iki kayıtlı zincirler,3506,85.5675984027382,80.4905875641757,79.0644609241301,82.0878494010268,0,yeni zincir etkileri
+B14b_sigma5,zincir_ici_ayni_sonuc,iki kayıtlı zincirler,3506,85.5675984027382,80.5048488305762,79.1200798630919,81.9466628636623,0,yeni zincir etkileri
