@@ -1,0 +1,15 @@
+fsSelection bit 0 (italic) and head table macStyle bit 1 (italic) should match
+fsSelection bit 0 (italic) and head table macStyle bit 1 (italic) should match
+fsSelection bit 0 (italic) and head table macStyle bit 1 (italic) should match
+fsSelection bit 0 (italic) and head table macStyle bit 1 (italic) should match
+fsSelection bit 0 (italic) and head table macStyle bit 1 (italic) should match
+fsSelection bit 0 (italic) and head table macStyle bit 1 (italic) should match
+Figures/Figure1.png  1
+Figures/Figure2.png  2
+Figures/Figure3.png  3
+Supplementary/FigureS1.png  S1
+Supplementary/FigureS2.png  S2
+Supplementary/FigureS3.png  S3
+Supplementary/FigureS4.png  S4
+Supplementary/FigureS5.png  S5
+~/veri-ortami/bin/python3 Codes/figurler.py  4.50s user 0.27s system 90% cpu 5.281 total

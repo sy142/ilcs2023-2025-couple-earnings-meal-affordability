@@ -1,0 +1,921 @@
+analiz.R başladı: 2026-10-29 20:20:19 
+Veri: 239985 satır, 266 sütun; xlsx okuma süresi (sn): 5 
+Key: <yil>
+     yil FK240_dolu karsilikli_tekil_fert karsilikli_degil_fert karsilikli_coklu_fert yalniz_gelen_fert es_bulunamadi birden_cok_gelen_bag_fert es_18_alti_fert
+   <num>      <int>                 <int>                 <int>                 <int>             <int>         <int>                     <int>           <int>
+1:  2023      38531                 38480                    17                    34                 0             0                        17              14
+2:  2024      39747                 39702                    15                    30                 0             0                        15               8
+3:  2025      39494                 39458                    12                    24                 0             0                        12               9
+   karsiliksiz_bagli_hane cok_eslilik_hane cok_ciftli_hane cift_sayisi_toplam
+                    <int>            <int>           <int>              <num>
+1:                     17               17             469              19240
+2:                     15               15             439              19851
+3:                     12               12             440              19729
+Key: <yil, cift_durum>
+      yil       cift_durum     N
+    <num>           <char> <int>
+ 1:  2023     belirsiz_bag    16
+ 2:  2023             cift 18400
+ 3:  2023 es_fk095_2_degil     7
+ 4:  2023           es_yok  6509
+ 5:  2024     belirsiz_bag    14
+ 6:  2024             cift 19021
+ 7:  2024 es_fk095_2_degil     7
+ 8:  2024           es_yok  6883
+ 9:  2025     belirsiz_bag    12
+10:  2025             cift 18925
+11:  2025 es_fk095_2_degil     8
+12:  2025           es_yok  6891
+Key: <yil>
+     yil    m_t
+   <num>  <num>
+1:  2023 131858
+2:  2024 273348
+3:  2025 486996
+Key: <yil, dislama>
+      yil                     dislama     N
+    <num>                      <char> <int>
+ 1:  2023 1a_referans_cift_yok_es_yok  6509
+ 2:  2023         1b_belirsiz_es_bagi    23
+ 3:  2023               2a_es_18_alti     8
+ 4:  2023           2b_iki_es_65_ustu  1868
+ 5:  2023      3_bireysel_kayit_eksik    24
+ 6:  2023        4_negatif_net_kazanc    57
+ 7:  2023                5_kazanc_yok  2487
+ 8:  2023                       uygun 13956
+ 9:  2024 1a_referans_cift_yok_es_yok  6883
+10:  2024         1b_belirsiz_es_bagi    21
+11:  2024               2a_es_18_alti     4
+12:  2024           2b_iki_es_65_ustu  2060
+13:  2024      3_bireysel_kayit_eksik     8
+14:  2024        4_negatif_net_kazanc    31
+15:  2024                5_kazanc_yok  2508
+16:  2024                       uygun 14410
+17:  2025 1a_referans_cift_yok_es_yok  6891
+18:  2025         1b_belirsiz_es_bagi    20
+19:  2025               2a_es_18_alti     3
+20:  2025           2b_iki_es_65_ustu  2091
+21:  2025      3_bireysel_kayit_eksik    19
+22:  2025        4_negatif_net_kazanc    53
+23:  2025                5_kazanc_yok  2559
+24:  2025                       uygun 14200
+      yil                     dislama     N
+    <num>                      <char> <int>
+Key: <yil>
+     yil cok_ciftli_hane ref_kazanc_yok_refdisi_kazaniyor
+   <num>           <int>                            <int>
+1:  2023             461                              135
+2:  2024             433                              133
+3:  2025             437                              137
+       y1    y2   bag reddedilen     kural
+    <num> <num> <int>      <int>    <char>
+ 1:  2023  2024 15024          7       ana
+ 2:  2023  2025  9615         27       ana
+ 3:  2024  2025 15523         34       ana
+ 4:  2023  2024 12924          0      imza
+ 5:  2023  2025  7432          0      imza
+ 6:  2024  2025 13396          0      imza
+ 7:  2023  2024 15599        139  ana_reis
+ 8:  2023  2025 10692        383  ana_reis
+ 9:  2024  2025 16072        151  ana_reis
+10:  2023  2024 14888          1 ana_bolge
+11:  2023  2025  9391         10 ana_bolge
+12:  2024  2025 15357          0 ana_bolge
+Key: <y1, y2, tur>
+       y1    y2          tur   bag HB031_ayni HH010_ayni HH020_ayni hane_buyuklugu_ayni egitim_karsilastirilabilen iki_esin_egitimi_ayni
+    <num> <num>       <char> <int>      <num>      <num>      <num>               <num>                      <int>                 <num>
+ 1:  2023  2024 imza_ve_cift 10828      100.0       97.8       97.2               100.0                      10809                  98.4
+ 2:  2023  2024  yalniz_cift  2100      100.0       96.8       96.4                19.9                       2095                  97.1
+ 3:  2023  2024  yalniz_imza  2096       93.5       93.2       94.6               100.0                        271                  79.0
+ 4:  2023  2024  yalniz_reis   575      100.0      100.0      100.0                21.9                        288                  14.9
+ 5:  2023  2025 imza_ve_cift  6063      100.0       95.5       94.3               100.0                       6047                  97.3
+ 6:  2023  2025  yalniz_cift  2183      100.0       93.1       91.6                15.8                       2182                  94.9
+ 7:  2023  2025  yalniz_imza  1369       83.6       85.2       89.1               100.0                        307                  62.9
+ 8:  2023  2025  yalniz_reis  1077      100.0      100.0      100.0                27.4                        722                  13.3
+ 9:  2024  2025 imza_ve_cift 11163      100.0       97.5       96.7               100.0                      11147                  98.9
+10:  2024  2025  yalniz_cift  2127      100.0       96.5       95.9                22.0                       2126                  98.0
+11:  2024  2025  yalniz_imza  2233       92.6       92.5       93.7               100.0                        298                  78.5
+12:  2024  2025  yalniz_reis   549      100.0      100.0      100.0                21.9                        272                  18.8
+                            anahtardaki_degisken
+                                          <char>
+ 1: hane büyüklüğü (imza); HB031 (çift anahtarı)
+ 2:                                        HB031
+ 3:                               hane büyüklüğü
+ 4:                          HB031, HH010, HH020
+ 5: hane büyüklüğü (imza); HB031 (çift anahtarı)
+ 6:                                        HB031
+ 7:                               hane büyüklüğü
+ 8:                          HB031, HH010, HH020
+ 9: hane büyüklüğü (imza); HB031 (çift anahtarı)
+10:                                        HB031
+11:                               hane büyüklüğü
+12:                          HB031, HH010, HH020
+Key: <y1, y2>
+      y1    y2  imza  cift  reis ana_kural yalniz_imza yalniz_cift imza_ve_cift ana_artı_reis reis_ile_eklenen inceleme_raporu_imza
+   <num> <num> <int> <int> <int>     <int>       <int>       <int>        <int>         <int>            <int>                <num>
+1:  2023  2024 12924 12928 10422     15024        2096        2100        10828         15599              575                12924
+2:  2023  2025  7432  8246  6664      9615        1369        2183         6063         10692             1077                 7432
+3:  2024  2025 13396 13290 10755     15523        2233        2127        11163         16072              549                13396
+Key: <kural, orneklem>
+       kural      orneklem     1     2     3
+      <char>        <char> <int> <int> <int>
+1:       ana   tüm haneler 24912 11603  9525
+2:       ana uygun çiftler  9002  7791  5994
+3: ana_bolge   tüm haneler 25346 11683  9327
+4: ana_bolge uygun çiftler  9304  7820  5874
+5:  ana_reis   tüm haneler 23393 11347 10202
+6:  ana_reis uygun çiftler  8500  7688  6230
+7:      imza   tüm haneler 30888 12053  7233
+8:      imza uygun çiftler 13511  7998  4353
+Key: <yil, G>
+     yil      G  hane herhangi_yila_bagli uygun_kayda_bagli uygun_kayda_bagli_imza uygun_kayda_bagli_ana_reis
+   <num> <char> <int>               <num>             <num>                  <num>                      <num>
+1:  2023      D  4093                73.6              72.8                   62.1                       74.4
+2:  2023      F   529                73.7              64.8                   56.5                       65.6
+3:  2023      M  9334                72.2              70.0                   58.8                       71.8
+4:  2024      D  4405                96.2              95.5                   85.7                       95.8
+5:  2024      F   569                95.8              89.6                   78.9                       89.8
+6:  2024      M  9436                97.0              94.9                   84.6                       95.2
+7:  2025      D  4394                70.8              70.3                   60.1                       72.2
+8:  2025      F   603                70.8              65.2                   54.6                       66.5
+9:  2025      M  9203                73.2              71.2                   60.2                       72.7
+Key: <kural, tur>
+        kural          tur  N_00 N_01/10  N_11 yuzde_00 yuzde_01/10 yuzde_11
+       <char>       <char> <int>   <int> <int>    <num>       <num>    <num>
+ 1:       ana imza_ve_cift  3807     843  1699     60.0        13.3     26.8
+ 2:       ana         tümü  4637    1047  2107     59.5        13.4     27.0
+ 3:       ana  yalniz_cift   709     174   368     56.7        13.9     29.4
+ 4:       ana  yalniz_imza   121      30    40     63.4        15.7     20.9
+ 5: ana_bolge imza_ve_cift  3882     856  1713     60.2        13.3     26.6
+ 6: ana_bolge         tümü  4656    1048  2116     59.5        13.4     27.1
+ 7: ana_bolge  yalniz_cift   722     176   374     56.8        13.8     29.4
+ 8: ana_bolge  yalniz_imza    52      16    29     53.6        16.5     29.9
+ 9:  ana_reis      dolayli     1       1    NA     50.0        50.0       NA
+10:  ana_reis imza_ve_cift  3696     819  1650     60.0        13.3     26.8
+11:  ana_reis         tümü  4550    1073  2065     59.2        14.0     26.9
+12:  ana_reis  yalniz_cift   685     170   359     56.4        14.0     29.6
+13:  ana_reis  yalniz_imza   112      29    38     62.6        16.2     21.2
+14:  ana_reis  yalniz_reis    56      54    18     43.8        42.2     14.1
+15:      imza imza_ve_cift  4620    1072  2093     59.3        13.8     26.9
+16:      imza         tümü  4755    1106  2137     59.5        13.8     26.7
+17:      imza  yalniz_imza   135      34    44     63.4        16.0     20.7
+Key: <dislama>
+                       dislama  2023  2024  2025 toplam
+                        <char> <int> <int> <int>  <int>
+1: 1a_referans_cift_yok_es_yok  6509  6883  6891  20283
+2:         1b_belirsiz_es_bagi    23    21    20     64
+3:               2a_es_18_alti     8     4     3     15
+4:           2b_iki_es_65_ustu  1868  2060  2091   6019
+5:      3_bireysel_kayit_eksik    24     8    19     51
+6:        4_negatif_net_kazanc    57    31    53    141
+7:                5_kazanc_yok  2487  2508  2559   7554
+8:                       uygun 13956 14410 14200  42566
+       yil      G     n  olay olay_yok  kish_n agirlikli_pay
+    <char> <char> <int> <int>    <num>   <num>         <num>
+ 1:   2023      D  4093  1037     3056  3004.1         30.84
+ 2:   2023      F   529   234      295   367.6          4.15
+ 3:   2023      M  9334  3707     5627  6499.9         65.01
+ 4:   2024      D  4405  1052     3353  3236.5         31.84
+ 5:   2024      F   569   274      295   403.8          4.24
+ 6:   2024      M  9436  3693     5743  6532.8         63.92
+ 7:   2025      D  4394   794     3600  3290.4         32.32
+ 8:   2025      F   603   225      378   439.3          4.46
+ 9:   2025      M  9203  3431     5772  6473.4         63.22
+10:  havuz      D 12892  2883    10009  9526.6         31.66
+11:  havuz      F  1701   733      968  1208.1          4.28
+12:  havuz      M 27973 10831    17142 19503.2         64.05
+    yuzdelik      s
+       <num>  <num>
+ 1:    0.010 0.0213
+ 2:    0.025 0.0409
+ 3:    0.050 0.0719
+ 4:    0.100 0.1204
+ 5:    0.250 0.2428
+ 6:    0.500 0.3979
+ 7:    0.750 0.5000
+ 8:    0.900 0.5949
+ 9:    0.950 0.6757
+10:    0.975 0.7595
+11:    0.990 0.8621
+       capa   alt   ust     n  olay olay_yok kish_n
+     <char> <num> <num> <int> <int>    <num>  <num>
+1:  D_dusuk  0.05  0.15  1285   349      936  949.4
+2:   D_orta  0.45  0.55  3440   604     2836 2530.8
+3: D_yuksek  0.85  0.95   123    39       84   91.8
+              kategori     n    siniflama agirlikli_yuzde
+                <char> <int>       <char>           <num>
+ 1:  calisti_kazancsiz   127   gelir_yili             7.8
+ 2: diger_faal_olmayan   272   gelir_yili            13.8
+ 3:             emekli  1040   gelir_yili            64.5
+ 4:              issiz   262   gelir_yili            14.0
+ 5:                  1    46 guncel_FI010             2.5
+ 6:                 10     2 guncel_FI010             0.1
+ 7:                  2     4 guncel_FI010             0.3
+ 8:                  3   112 guncel_FI010             7.0
+ 9:                  4    25 guncel_FI010             1.3
+10:                  5   228 guncel_FI010            12.3
+11:                  6     6 guncel_FI010             0.3
+12:                  7  1029 guncel_FI010            63.7
+13:                  8   242 guncel_FI010            12.0
+14:                  9     7 guncel_FI010             0.5
+Key: <e_durum_gy>
+           e_durum_gy     1     2     3     4     5     6     7     8     9    10
+               <char> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>
+1:  calisti_kazancsiz     2     0   101    22     1     0     1     0     0     0
+2: diger_faal_olmayan     7     1     2     0     2     6    10   235     7     2
+3:             emekli    15     2     4     3     1     0  1012     3     0     0
+4:              issiz    22     1     5     0   224     0     6     4     0     0
+Key: <e_durum_gy>
+           e_durum_gy     n emekli_ayligi malulen kazancsiz_calisma
+               <char> <int>         <int>   <int>             <int>
+1:  calisti_kazancsiz   127            60       4               127
+2: diger_faal_olmayan   272            31     151                 3
+3:             emekli  1040           987      42                 4
+4:              issiz   262             9       9                 1
+Key: <G>
+        G     n kadin_ucretsiz_aile erkek_ucretsiz_aile en_az_biri ucret_ornegi durum_uyumlu tek_cift kadin_kazancsiz_calisma erkek_kazancsiz_calisma
+   <char> <int>               <int>               <int>      <int>        <int>        <int>    <int>                   <int>                   <int>
+1:      D 12892                 133                  28        161         9535         9785    12750                       0                       0
+2:      F  1701                   4                 128        130         1362         1186     1670                       0                     135
+3:      M 27973                2899                   5       2903        19163        22355    27307                    3200                       0
+Key: <degisken>
+         degisken 2023_D 2023_F 2023_M 2024_D 2024_F 2024_M 2025_D 2025_F 2025_M
+           <char>  <int>  <int>  <int>  <int>  <int>  <int>  <int>  <int>  <int>
+ 1:         HB030      0      0      0      0      0      0      0      0      0
+ 2:         HB031      0      0      0      0      0      0      0      0      0
+ 3:             Y      0      0      0      0      0      0      0      0      0
+ 4:            aE      0      0      0      0      0      0      0      0      0
+ 5:            aO      0      0      0      0      0      0      0      0      0
+ 6:        aO_izk      0      0      0      0      0      0      0      0      0
+ 7:         a_esd      0      0      0      0      0      0      0      0      0
+ 8:       e_FI120    290    469    723    332    508    793    321    537    845
+ 9:      e_egitim      0      0      0      0      0      0      0      0      0
+10:       e_kisit      0      0      0      0      0      0      0      0      0
+11:      e_kronik      0      0      0      0      0      0      0      0      0
+12:         e_yas      0      0      0      0      0      0      0      0      0
+13:       k_FI120    818    116   8112    811    119   8334    830    108   8199
+14:      k_egitim      0      0      0      0      0      0      0      0      0
+15:       k_kisit      0      0      0      0      0      0      0      0      0
+16:      k_kronik      0      0      0      0      0      0      0      0      0
+17:         k_yas      0      0      0      0      0      0      0      0      0
+18:      mulkiyet      0      0      0      0      0      0      0      0      0
+19:         n_0_5      0      0      0      0      0      0      0      0      0
+20:       n_14_17      0      0      0      0      0      0      0      0      0
+21:        n_6_13      0      0      0      0      0      0      0      0      0
+22: n_diger_18_64      0      0      0      0      0      0      0      0      0
+23:    n_diger_65      0      0      0      0      0      0      0      0      0
+         degisken 2023_D 2023_F 2023_M 2024_D 2024_F 2024_M 2025_D 2025_F 2025_M
+           <char>  <int>  <int>  <int>  <int>  <int>  <int>  <int>  <int>  <int>
+Key: <yil, G>
+     yil      G  hane hg110_negatif_kurali O_negatif O_negatif_kural
+   <num> <char> <int>                <int>     <int>           <int>
+1:  2023      D  4093                    0       540               0
+2:  2023      F   529                    0        11               0
+3:  2023      M  9334                    0       678               0
+4:  2024      D  4405                    1       520               1
+5:  2024      F   569                    0        11               0
+6:  2024      M  9436                    0       635               0
+7:  2025      D  4394                    0       427               0
+8:  2025      F   603                    0        13               0
+9:  2025      M  9203                    0       605               0
+             degisken kayitsiz_esli     dahil    smd n_kayitsiz
+               <char>         <num>     <num>  <num>      <int>
+ 1:                 Y         0.365     0.331  0.071         51
+ 2:        HG110_oran         1.551     1.602 -0.043         51
+ 3:             n_0_5         0.241     0.409 -0.268         51
+ 4:            n_6_13         0.638     0.630  0.010         51
+ 5:           n_14_17         0.382     0.299  0.153         51
+ 6:    hane_buyuklugu         4.425     3.956  0.260         51
+ 7:             k_yas        45.235    41.070  0.406         51
+ 8:             e_yas        47.727    44.577  0.291         51
+ 9:           Ek_oran         0.069     0.226 -0.414         25
+10:           Ee_oran         0.616     0.907 -0.300         25
+11:          yil_2023         0.405     0.334  0.148         51
+12:          yil_2024         0.082     0.335 -0.655         51
+13:          yil_2025         0.513     0.331  0.374         51
+14:         bolge_TR1         0.282     0.194  0.209         51
+15:         bolge_TR2         0.102     0.048  0.206         51
+16:         bolge_TR3         0.049     0.132 -0.292         51
+17:         bolge_TR4         0.037     0.107 -0.271         51
+18:         bolge_TR5         0.259     0.102  0.415         51
+19:         bolge_TR6         0.130     0.118  0.036         51
+20:         bolge_TR7         0.042     0.048 -0.030         51
+21:         bolge_TR8         0.014     0.054 -0.224         51
+22:         bolge_TR9         0.000     0.034 -0.267         51
+23:         bolge_TRA         0.005     0.024 -0.161         51
+24:         bolge_TRB         0.000     0.041 -0.293         51
+25:         bolge_TRC         0.079     0.096 -0.060         51
+26:   n_kayitsiz_esli        51.000        NA     NA         NA
+27:           n_dahil            NA 42566.000     NA         NA
+28: gozlenen_es_kadin        25.000        NA     NA         NA
+29: gozlenen_es_erkek        25.000        NA     NA         NA
+             degisken kayitsiz_esli     dahil    smd n_kayitsiz
+               <char>         <num>     <num>  <num>      <int>
+Çok terimli model yakınsama kodu: 0 
+          k          alt        ust yz_grup_alt yz_grup_ust etiket
+     <char>        <num>      <num>      <char>      <char> <char>
+1:        M 0.3546725578 0.94798767           M    D_yuksek    ana
+2:  D_dusuk 0.0067584137 0.10571770      D_orta           F    ana
+3:   D_orta 0.0041957457 0.50286335      D_orta           M    ana
+4: D_yuksek 0.0006490017 0.02695741    D_yuksek           M    ana
+5:        F 0.0054720162 0.18231049           F      D_orta    ana
+       yil      G     n Q_disi_n Q_disi_agirlikli
+    <char> <char> <int>    <int>            <num>
+ 1:   2023      D  4093     2074            48.61
+ 2:   2023      F   529      326            61.30
+ 3:   2023      M  9334     5283            51.34
+ 4:   2024      D  4405     2345            50.89
+ 5:   2024      F   569      359            62.45
+ 6:   2024      M  9436     5391            51.63
+ 7:   2025      D  4394     2312            50.26
+ 8:   2025      F   603      385            61.34
+ 9:   2025      M  9203     5223            50.85
+10:  havuz      D 12892     6731            49.94
+11:  havuz      F  1701     1070            61.70
+12:  havuz      M 27973    15897            51.28
+13:   2023   tümü 13956     7683            50.91
+14:   2024   tümü 14410     8095            51.85
+15:   2025   tümü 14200     7920            51.13
+16:  havuz   tümü 42566    23698            51.30
+Q dışı ağırlıklı pay: toplam 51.3 %, F 61.7 %; uyarı eşiği 10 / 25
+         degisken     ic    dis    smd
+           <char>  <num>  <num>  <num>
+ 1:             Y  0.309  0.352 -0.092
+ 2:        E_oran  0.964  1.283 -0.269
+ 3:        O_oran  0.543  0.446  0.137
+ 4:         k_yas 43.464 38.798  0.475
+ 5:         e_yas 46.901 42.371  0.454
+ 6:         n_0_5  0.234  0.576 -0.527
+ 7:        n_6_13  0.479  0.773 -0.349
+ 8:       n_14_17  0.334  0.265  0.123
+ 9: n_diger_18_64  0.727  0.417  0.339
+10:    n_diger_65  0.056  0.045  0.047
+11:       k_kisit  0.243  0.204  0.095
+12:       e_kisit  0.190  0.175  0.038
+13:      k_kronik  0.401  0.323  0.162
+14:      e_kronik  0.332  0.282  0.109
+15:    k_egitim_1  0.100  0.175 -0.219
+16:    k_egitim_2  0.420  0.355  0.133
+17:    k_egitim_3  0.069  0.066  0.014
+18:    k_egitim_4  0.201  0.177  0.062
+19:    k_egitim_5  0.210  0.228 -0.043
+20:    e_egitim_1  0.036  0.044 -0.038
+21:    e_egitim_2  0.400  0.353  0.098
+22:    e_egitim_3  0.116  0.088  0.094
+23:    e_egitim_4  0.238  0.239 -0.004
+24:    e_egitim_5  0.209  0.276 -0.157
+25:     bolge_TR1  0.220  0.169  0.131
+26:     bolge_TR2  0.053  0.044  0.043
+27:     bolge_TR3  0.143  0.122  0.061
+28:     bolge_TR4  0.119  0.096  0.074
+29:     bolge_TR5  0.108  0.098  0.034
+30:     bolge_TR6  0.129  0.108  0.066
+31:     bolge_TR7  0.053  0.043  0.047
+32:     bolge_TR8  0.058  0.051  0.035
+33:     bolge_TR9  0.031  0.038 -0.035
+34:     bolge_TRA  0.004  0.043 -0.265
+35:     bolge_TRB  0.022  0.060 -0.195
+36:     bolge_TRC  0.061  0.130 -0.237
+37:      yil_2023  0.336  0.331  0.011
+38:      yil_2024  0.331  0.339 -0.016
+39:      yil_2025  0.333  0.330  0.005
+         degisken     ic    dis    smd
+           <char>  <num>  <num>  <num>
+f(s) iç düğümleri (D ∩ Q, ağırlıklı 25/50/75): 0.2513 0.3962 0.5 
+                    grup     n  olay olay_yok kish_n agirlikli_pay                                   kural saglandi
+                  <char> <int> <int>    <num>  <num>         <num>                                  <char>   <lgcl>
+ 1:                    D  6161  1573     4588 4618.7         32.55                                               NA
+ 2:                    F   631   220      411  463.0          3.37 köşe: n ≥ 200, olay ≥ 50, olay yok ≥ 50     TRUE
+ 3:                    M 12076  3995     8081 8881.7         64.08 köşe: n ≥ 200, olay ≥ 50, olay yok ≥ 50     TRUE
+ 4:              D_dusuk   613   193      420  468.0          3.13                           çapa: n ≥ 200     TRUE
+ 5:               D_orta  1564   334     1230 1146.7          8.19                           çapa: n ≥ 200     TRUE
+ 6:             D_yuksek    74    21       53   59.7          0.33                           çapa: n ≥ 200    FALSE
+ 7:  F_calisti_kazancsiz    75    21       54   53.9          0.43                     koca durumu: n ≥ 50     TRUE
+ 8: F_diger_faal_olmayan    77    45       32   56.1          0.38                     koca durumu: n ≥ 50     TRUE
+ 9:             F_emekli   339    88      251  250.1          1.87                     koca durumu: n ≥ 50     TRUE
+10:              F_issiz   140    66       74  104.8          0.69                     koca durumu: n ≥ 50     TRUE
+        G orneklem     n kadin_reis kadin_reis_agirlikli_yuzde
+   <char>   <char> <int>      <int>                      <num>
+1:      D    uygun 12892       1902                       15.2
+2:      F    uygun  1701        297                       18.6
+3:      M    uygun 27973       2786                       11.6
+4:      D        Q  6161        814                       13.4
+5:      F        Q   631        140                       22.4
+6:      M        Q 12076       1431                       13.2
+   yuzdelik          s
+      <num>      <num>
+1:    0.025 0.04378076
+2:    0.250 0.25129983
+3:    0.500 0.39624868
+4:    0.750 0.50000000
+5:    0.975 0.76783420
+   orneklem   n_D  esit esit_agirlikli pay_045_055
+     <char> <int> <int>          <num>       <int>
+1:    uygun 12892   537       3.833484        3440
+2:        Q  6161   244       3.876528        1564
+Doğrulama: 39 / 39 tuttu
+Empty data.table (0 rows and 5 cols): kontrol,kaynak,beklenen,bulunan,durum
+   sd_zincir_oncel yayginlik_q05 yayginlik_q50 yayginlik_q95 pay_1_alti_99_ustu E4_q05  E4_q50 E4_q95 rho_q05 rho_q50 rho_q95
+             <num>         <num>         <num>         <num>              <num>  <num>   <num>  <num>   <num>   <num>   <num>
+1:               1          1.77          49.6          98.0             0.0725  -25.0 0.00258   23.2 0.00138   0.132    0.55
+2:               2          2.88          49.7          96.8             0.0565  -22.6 0.00685   21.2 0.00549   0.379    0.83
+Önsel öngörü kararı: başlangıç prior'ları korundu 
+                                       deneme  iter warmup dakika                                                  durum
+                                       <char> <int>  <int>  <num>                                                 <char>
+1: CPU, 4 zincir × 4 iş parçacığı, reduce_sum   300    150   1.19                                                çalıştı
+2:        GPU, brms opencl(c(0, 0)), 4 zincir   300    150   0.13 hata: Fitting failed. Unable to retrieve the metadata.
+Loading required namespace: rstan
+    model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min            en_kotu_rhat
+   <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>                  <char>
+1:     M2        66   1.0012         4114         7522              0            0         0                     0     0.659 r_ibbs2[TR33,Intercept]
+   en_kotu_ess
+        <char>
+1:        lp__
+    model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+   <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1:     M1        59   1.0017         3481         6204              0            0         0                     0      0.67    Intercept   Intercept
+    model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+   <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1:     M3        73   1.0012         3724         6873              0            0         0                     0      0.67         lp__        lp__
+    model                              parametre_grubu parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti
+   <char>                                       <char>     <int>    <num>        <num>        <num>          <int>        <int>
+1:     M1 zincir düzeyi standart normal sapmalar (z_2)     11192   1.0023        25001         9329              0            0
+2:     M2 zincir düzeyi standart normal sapmalar (z_2)     11192   1.0021        26259         9582              0            0
+3:     M3 zincir düzeyi standart normal sapmalar (z_2)     11192   1.0020        25312         9385              0            0
+     model buyukluk  rope tahmin   alt   ust p_alt  p_ic p_ust mcse_tahmin mcse_p
+    <char>   <char> <num>  <num> <num> <num> <num> <num> <num>       <num>  <num>
+ 1:     M2       E1     2  -0.31 -4.17  3.61 0.199 0.675 0.126       0.023 0.0040
+ 2:     M2       E2     2   0.44 -5.54  6.83 0.215 0.473 0.312       0.031 0.0041
+ 3:     M2      E3a     2   1.42 -5.58  8.09 0.167 0.400 0.433       0.028 0.0039
+ 4:     M2      E3b     2  -2.71 -5.02 -0.39 0.722 0.278 0.000       0.010 0.0033
+ 5:     M2       E4     2   4.54  0.91  8.33 0.000 0.084 0.916       0.017 0.0022
+ 6:     M1       E1     2   5.44  1.67  9.41 0.000 0.037 0.963       0.021 0.0016
+ 7:     M1       E2     2   3.35 -2.73  9.74 0.044 0.294 0.662       0.030 0.0033
+ 8:     M1      E3a     2   4.68 -2.51 11.63 0.034 0.198 0.768       0.033 0.0032
+ 9:     M1      E3b     2   1.59 -0.79  3.87 0.002 0.636 0.362       0.012 0.0036
+10:     M1       E4     2   6.44  2.39 10.53 0.000 0.015 0.985       0.016 0.0010
+11:     M3       E1     2  -0.52 -4.29  3.43 0.221 0.674 0.105       0.018 0.0040
+12:     M3       E2     2   0.03 -5.92  6.33 0.257 0.479 0.264       0.025 0.0041
+13:     M3      E3a     2   1.45 -5.48  8.12 0.160 0.403 0.437       0.035 0.0039
+14:     M3      E3b     2  -2.24 -4.56  0.06 0.578 0.422 0.000       0.013 0.0035
+15:     M3       E4     2   3.73  0.07  7.47 0.001 0.180 0.819       0.018 0.0030
+16:     M2       E1     1  -0.31 -4.17  3.61 0.367 0.377 0.256       0.023 0.0039
+17:     M2       E2     1   0.44 -5.54  6.83 0.324 0.247 0.429       0.031 0.0034
+18:     M2      E3a     1   1.42 -5.58  8.09 0.246 0.206 0.548       0.028 0.0036
+19:     M2      E3b     1  -2.71 -5.02 -0.39 0.925 0.074 0.001       0.010 0.0021
+20:     M2       E4     1   4.54  0.91  8.33 0.001 0.028 0.971       0.017 0.0014
+21:     M2       E1     3  -0.31 -4.17  3.61 0.086 0.863 0.051       0.023 0.0030
+22:     M2       E2     3   0.44 -5.54  6.83 0.134 0.654 0.212       0.031 0.0040
+23:     M2      E3a     3   1.42 -5.58  8.09 0.108 0.569 0.323       0.028 0.0039
+24:     M2      E3b     3  -2.71 -5.02 -0.39 0.402 0.599 0.000       0.010 0.0036
+25:     M2       E4     3   4.54  0.91  8.33 0.000 0.205 0.795       0.017 0.0032
+     model buyukluk  rope tahmin   alt   ust p_alt  p_ic p_ust mcse_tahmin mcse_p
+    <char>   <char> <num>  <num> <num> <num> <num> <num> <num>       <num>  <num>
+   s_alt s_ust medyan   alt   ust p_2_ustu p_3_ustu
+   <num> <num>  <num> <num> <num>    <num>    <num>
+1:  0.05  0.76   2.99   1.1  5.73    0.818    0.496
+Warning in density.default(qd$s, weights = qd$w_norm/sum(qd$w_norm), from = 0,  :
+  Selecting bandwidth *not* using 'weights'
+    model   medyan      alt      ust rho_medyan   rho_alt   rho_ust   daralma
+   <char>    <num>    <num>    <num>      <num>     <num>     <num>     <num>
+1:     M2 2.843494 2.685464 3.006689  0.7107891 0.6867265 0.7331829 0.9815194
+     model                 kontrol                  grup     n gozlenen rep_medyan rep_alt rep_ust   ppp               tekrar
+    <char>                  <char>                <char> <int>    <num>      <num>   <num>   <num> <num>               <char>
+ 1:     M2                   G_yil                D 2023  2019     29.7       27.3    25.1    29.9 0.040 yeni zincir etkileri
+ 2:     M2                   G_yil                D 2024  2060     27.6       27.6    25.3    30.2 0.512 yeni zincir etkileri
+ 3:     M2                   G_yil                D 2025  2082     20.7       21.5    19.5    23.6 0.750 yeni zincir etkileri
+ 4:     M2                   G_yil                F 2023   203     36.7       37.7    30.3    46.4 0.595 yeni zincir etkileri
+ 5:     M2                   G_yil                F 2024   210     43.4       36.7    29.2    43.8 0.030 yeni zincir etkileri
+ 6:     M2                   G_yil                F 2025   218     30.0       29.9    22.6    37.7 0.495 yeni zincir etkileri
+ 7:     M2                   G_yil                M 2023  4051     35.6       34.8    32.7    37.0 0.207 yeni zincir etkileri
+ 8:     M2                   G_yil                M 2024  4045     35.5       35.0    33.1    37.0 0.350 yeni zincir etkileri
+ 9:     M2                   G_yil                M 2025  3980     28.1       27.8    25.8    29.7 0.352 yeni zincir etkileri
+10:     M2                     pay            D [0, 0.2)  1124     31.0       30.4    26.7    34.0 0.370 yeni zincir etkileri
+11:     M2                     pay          D [0.2, 0.4)  1973     25.6       25.8    23.5    28.7 0.557 yeni zincir etkileri
+12:     M2                     pay          D [0.4, 0.6)  2440     23.4       22.2    19.5    24.7 0.182 yeni zincir etkileri
+13:     M2                     pay          D [0.6, 0.8)   502     27.1       27.3    22.8    32.5 0.532 yeni zincir etkileri
+14:     M2                     pay            D [0.8, 1]   122     35.6       31.6    20.9    41.5 0.242 yeni zincir etkileri
+15:     M2                     pay                     F   631     36.5       34.6    29.1    40.9 0.282 yeni zincir etkileri
+16:     M2                     pay                     M 12076     33.1       32.5    31.1    34.1 0.247 yeni zincir etkileri
+17:     M2   zincir_ici_ayni_sonuc iki kayıtlı zincirler  3506     85.6       80.4    79.0    81.9 0.000 yeni zincir etkileri
+18:     M2 zincir_ici_ayni_sonuc_3  üç kayıtlı zincirler  2085     74.5       70.2    67.7    72.3 0.000 yeni zincir etkileri
+         model buyukluk tahmin   alt   ust
+        <char>   <char>  <num> <num> <num>
+ 1: C19_capa25       E1  -0.37 -2.51  1.78
+ 2: C19_capa25       E2   0.59 -3.12  4.44
+ 3: C19_capa25      E3a   1.39 -3.24  6.01
+ 4: C19_capa25      E3b  -2.59 -4.90 -0.30
+ 5: C19_capa25       E4   4.54  0.91  8.33
+ 6: C19_capa20       E1  -0.41 -3.09  2.25
+ 7: C19_capa20       E2   0.63 -3.64  5.14
+ 8: C19_capa20      E3a   1.40 -3.72  6.42
+ 9: C19_capa20      E3b  -2.52 -4.94 -0.14
+10: C19_capa20       E4   4.54  0.91  8.33
+       model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+      <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: M2_Fdurum        69   1.0005         8084        15345              0            0         0                     0      0.65         lp__        lp__
+   kategori     n  olay   ham    pF  pD09   E3a   alt   ust p_alt  p_ic p_ust
+     <char> <int> <int> <num> <num> <num> <num> <num> <num> <num> <num> <num>
+1:   emekli   339    88  27.1  27.4  29.3  -1.9  -9.3   5.2 0.493 0.364 0.144
+2:    issiz   140    66  52.7  47.4  36.4  11.0   1.1  21.0 0.004 0.032 0.964
+3:    diger    77    45  56.8  52.7  51.2   1.4 -10.0  12.9 0.278 0.260 0.462
+4:  calisti    75    21  33.9  30.0  33.4  -3.3 -14.1   7.7 0.596 0.231 0.173
+    model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+   <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: M2_yil        70   1.0005         7073        13851              0            0         0                     0     0.663         lp__        lp__
+      kose   yil                   olcek  tahmin     alt      ust
+    <char> <int>                  <char>   <num>   <num>    <num>
+ 1:      M  2023           d_k,t (logit) -0.1690 -0.3446  0.00814
+ 2:      M  2023 delta_k + d_k,t (logit) -0.5329 -0.8221 -0.24063
+ 3:      M  2024           d_k,t (logit) -0.0483 -0.2172  0.12415
+ 4:      M  2024 delta_k + d_k,t (logit) -0.4125 -0.7077 -0.11337
+ 5:      M  2025           d_k,t (logit)  0.2157  0.0317  0.40347
+ 6:      M  2025 delta_k + d_k,t (logit) -0.1472 -0.4579  0.16406
+ 7:      F  2023           d_k,t (logit) -0.4917 -0.9186 -0.05702
+ 8:      F  2023 delta_k + d_k,t (logit) -0.3260 -0.9479  0.30022
+ 9:      F  2024           d_k,t (logit)  0.3734 -0.0466  0.78779
+10:      F  2024 delta_k + d_k,t (logit)  0.5405 -0.0835  1.15815
+11:      F  2025           d_k,t (logit)  0.1200 -0.3198  0.55479
+12:      F  2025 delta_k + d_k,t (logit)  0.2860 -0.3445  0.90519
+      yil buyukluk tahmin    alt   ust
+    <int>   <char>  <num>  <num> <num>
+ 1:  2023       E1  -0.18  -4.29  4.02
+ 2:  2023       E2   0.55  -5.92  7.25
+ 3:  2023      E3a  -3.06 -11.28  5.19
+ 4:  2023      E3b  -4.32  -7.29 -1.37
+ 5:  2023       E4   1.83  -3.31  7.28
+ 6:  2024       E1  -0.17  -4.24  3.98
+ 7:  2024       E2   0.54  -5.85  7.17
+ 8:  2024      E3a   4.96  -3.43 13.10
+ 9:  2024      E3b  -3.22  -6.12 -0.37
+10:  2024       E4   8.70   3.20 14.24
+11:  2025       E1  -0.15  -3.74  3.58
+12:  2025       E2   0.48  -5.09  6.46
+13:  2025      E3a   2.29  -5.11  9.50
+14:  2025      E3b  -0.78  -3.41  1.80
+15:  2025       E4   3.53  -1.33  8.65
+A6 tüm yaşlar: uygun 43702 Q 18194 
+A10 üç kategorili ortak destek: uygun 42566 Q3 25609 ; dışarıda ağırlıklı % 37.4 
+       orneklem     D s_005_015 s_045_055 s_085_095
+         <char> <int>     <int>     <int>     <int>
+1:            Q  6161       613      1564        74
+2: A9_tum_uygun 12892      1285      3440       123
+3:  A10_destek3  7520       782      1867        92
+     model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+    <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: A1_2025        63   1.0003        20068        37930              0            0         0                     0     0.854         lp__        lp__
+A1_2025 tamam: 2026-10-29 20:35:06 
+     model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+    <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: A2_2023        62   1.0007        17556        30492              0            0         0                     0     0.817    Intercept   Intercept
+A2_2023 tamam: 2026-10-29 20:35:09 
+     model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+    <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: A2_2024        63   1.0002        19139        35985              0            0         0                     0     0.837        b_ky1        lp__
+A2_2024 tamam: 2026-10-29 20:35:12 
+      model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+     <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: A3_ucret        66   1.0014         3602         6674              0            0         0                     0     0.654         lp__        lp__
+A3_ucret tamam: 2026-10-29 20:35:13 
+                  model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat
+                 <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>
+1: A4_ucretsiz_aile_yok        66   1.0041         1306         2665              0            0         0                     0     0.636        b_hO2
+   en_kotu_ess
+        <char>
+1:        lp__
+A4_ucretsiz_aile_yok tamam: 2026-10-29 20:35:14 
+         model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+        <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: A5_tek_cift        66   1.0024         1125         2196              0            0         0                     0     0.661         lp__        lp__
+A5_tek_cift tamam: 2026-10-29 20:35:15 
+         model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+        <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: A7_TR63_yok        65   1.0029         1308         2403              0            0         0                     0      0.66         lp__        lp__
+A7_TR63_yok tamam: 2026-10-29 20:35:16 
+            model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+           <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: A8_durum_uyumu        66    1.005         1365         2477              0            0         0                     0     0.617         lp__        lp__
+A8_durum_uyumu tamam: 2026-10-29 20:35:17 
+          model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+         <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: A9_tum_uygun        66   1.0011         2623         5335              0            0         0                     0     0.675         lp__   Intercept
+A9_tum_uygun tamam: 2026-10-29 20:35:18 
+           model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min  en_kotu_rhat en_kotu_ess
+          <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>        <char>      <char>
+1: A6_tum_yaslar        66   1.0033         1174         2076              0            0         0                     0     0.647 b_e_egitim_f2        lp__
+A6_tum_yaslar tamam: 2026-10-29 20:35:19 
+            model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+           <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: B10_agirliksiz        66    1.001         3358         6576              0            0         0                     0     0.589        b_hO2        lp__
+B10_agirliksiz tamam: 2026-10-29 20:35:20 
+           model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min        en_kotu_rhat
+          <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>              <char>
+1: B12_zincirsiz        65   1.0039          846         1429              0            0         0                     0     0.777 sd_ibbs2__Intercept
+   en_kotu_ess
+        <char>
+1:   Intercept
+B12_zincirsiz tamam: 2026-10-29 20:35:21 
+      model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min            en_kotu_rhat
+     <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>                  <char>
+1: B13_imza        66   1.0046         1117         1864              0            0         0                     0     0.634 r_ibbs2[TR10,Intercept]
+   en_kotu_ess
+        <char>
+1:        lp__
+B13_imza tamam: 2026-10-29 20:35:22 
+          model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+         <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: B13_ana_reis        66   1.0025         1179         2309              0            0         0                     0     0.663         lp__        lp__
+B13_ana_reis tamam: 2026-10-29 20:35:23 
+        model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min            en_kotu_rhat
+       <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>                  <char>
+1: B14_sigma2        66   1.0043         1012         1392              0            0         0                     0     0.644 r_ibbs2[TR62,Intercept]
+   en_kotu_ess
+        <char>
+1:   Intercept
+B14_sigma2 tamam: 2026-10-29 20:35:24 
+         model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min            en_kotu_rhat
+        <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>                  <char>
+1: B14b_sigma5        66   1.0022         1027         2321              0            0         0                     0     0.631 r_ibbs2[TR51,Intercept]
+   en_kotu_ess
+        <char>
+1:        lp__
+B14b_sigma5 tamam: 2026-10-29 20:35:24 
+           model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min        en_kotu_rhat
+          <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>              <char>
+1: B13_ana_bolge        66   1.0025         1155         2445              0            0         0                     0     0.682 sd_ibbs2__Intercept
+   en_kotu_ess
+        <char>
+1:        lp__
+B13_ana_bolge tamam: 2026-10-29 20:35:25 
+      model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+     <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: B15_kish        66   1.0033         1174         2214              0            0         0                     0      0.65        b_gE4        lp__
+B15_kish tamam: 2026-10-29 20:35:26 
+         model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min            en_kotu_rhat
+        <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>                  <char>
+1: A10_destek3        66   1.0032         1216         1918              0            0         0                     0     0.593 r_ibbs2[TR22,Intercept]
+   en_kotu_ess
+        <char>
+1:   Intercept
+A10_destek3 tamam: 2026-10-29 20:35:27 
+            model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min            en_kotu_rhat
+           <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>                  <char>
+1: A11_esit_haric        66    1.002         1235         2191              0            0         0                     0      0.64 r_ibbs2[TR41,Intercept]
+   en_kotu_ess
+        <char>
+1:        lp__
+A11_esit_haric tamam: 2026-10-29 20:35:28 
+       model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+      <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: C15_esik5        66   1.0039         1275         2233              0            0         0                     0     0.647    Intercept        lp__
+C15_esik5 tamam: 2026-10-29 20:35:29 
+       model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+      <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: C16_O_izk        66   1.0025         1185         2409              0            0         0                     0     0.647    Intercept        lp__
+C16_O_izk tamam: 2026-10-29 20:35:29 
+         model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+        <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: C17_esdeger        63   1.0048         1126         2110              0            0         0                     0      0.59         lp__        lp__
+C17_esdeger tamam: 2026-10-29 20:35:30 
+          model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+         <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: C18_fs_sabit        66   1.0047         1268         2405              0            0         0                     0     0.629    Intercept        lp__
+C18_fs_sabit tamam: 2026-10-29 20:35:31 
+        model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min en_kotu_rhat en_kotu_ess
+       <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>       <char>      <char>
+1: C18_fs_df3        65   1.0024         1362         2608              0            0         0                     0     0.653        b_gE4        lp__
+C18_fs_df3 tamam: 2026-10-29 20:35:32 
+        model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min            en_kotu_rhat
+       <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>                  <char>
+1: C18_fs_df5        67   1.0021         1157         2281              0            0         0                     0     0.657 r_ibbs2[TRB2,Intercept]
+   en_kotu_ess
+        <char>
+1:        lp__
+C18_fs_df5 tamam: 2026-10-29 20:35:33 
+            model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min        en_kotu_rhat
+           <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>              <char>
+1: C20_fs_prior05        66    1.003         1243         2160              0            0         0                     0     0.653 sd_ibbs2__Intercept
+   en_kotu_ess
+        <char>
+1:        lp__
+C20_fs_prior05 tamam: 2026-10-29 20:35:34 
+           model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min            en_kotu_rhat
+          <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>                  <char>
+1: C20_fs_prior2        66   1.0032         1174         2199              0            0         0                     0     0.666 r_ibbs2[TR10,Intercept]
+   en_kotu_ess
+        <char>
+1:        lp__
+C20_fs_prior2 tamam: 2026-10-29 20:35:34 
+     model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min  en_kotu_rhat en_kotu_ess
+    <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>        <char>      <char>
+1: C21_b25        66   1.0053          890         1904              0            0         0                     0     0.657 b_e_egitim_f2   Intercept
+C21_b25 tamam: 2026-10-29 20:35:35 
+    model parametre rhat_max ess_bulk_min ess_tail_min rhat_buyuk_101 ess_400_alti diverjans agac_derinligi_siniri ebfmi_min         en_kotu_rhat en_kotu_ess
+   <char>     <int>    <num>        <num>        <num>          <int>        <int>     <num>                 <int>     <num>               <char>      <char>
+1: C21_b5        66   1.0034         1121         2008              0            0         0                     0     0.632 sd_zincir__Intercept   Intercept
+C21_b5 tamam: 2026-10-29 20:35:36 
+            model medyan   alt   ust rho_medyan
+           <char>  <num> <num> <num>      <num>
+1:             M2   2.84  2.69  3.01      0.711
+2: B10_agirliksiz   2.98  2.80  3.16      0.729
+3:       B13_imza   2.86  2.70  3.03      0.713
+4:   B13_ana_reis   2.82  2.67  2.99      0.708
+5:     B14_sigma2   2.86  2.71  3.03      0.713
+6:    B14b_sigma5   2.86  2.71  3.03      0.714
+            model                                tekrar gozlenen rep_medyan rep_alt rep_ust   ppp
+           <char>                                <char>    <num>      <num>   <num>   <num> <num>
+1:             M2                  yeni zincir etkileri     85.6       80.4    79.0    81.9     0
+2: B10_agirliksiz                  yeni zincir etkileri     85.6       81.1    79.6    82.5     0
+3:  B12_zincirsiz zincir etkisi yok (kayıtlar bağımsız)     85.6       64.8    63.3    66.5     0
+4:       B13_imza                  yeni zincir etkileri     85.3       80.5    78.9    82.0     0
+5:   B13_ana_reis                  yeni zincir etkileri     85.1       80.2    78.8    81.6     0
+6:     B14_sigma2                  yeni zincir etkileri     85.6       80.5    79.1    82.1     0
+7:    B14b_sigma5                  yeni zincir etkileri     85.6       80.5    79.1    81.9     0
+Key: <model, senaryo>
+      model    senaryo   2023  2024   2025
+     <char>     <char>  <num> <num>  <num>
+ 1:  M2_yil      D0.10 35.435 34.68 26.253
+ 2:  M2_yil      D0.50 35.887 35.14 26.654
+ 3:  M2_yil      D0.90 35.966 35.21 26.740
+ 4:  M2_yil        E3b -4.325 -3.22 -0.782
+ 5:  M2_yil          F 32.948 40.17 29.012
+ 6:  M2_yil          M 31.117 31.47 25.471
+ 7:  M2_yil egim_01_05 -0.457 -0.45 -0.398
+ 8: tek_yil      D0.10 36.913 33.16 29.248
+ 9: tek_yil      D0.50 37.230 35.85 28.738
+10: tek_yil      D0.90 40.813 33.96 28.103
+11: tek_yil        E3b -4.740 -1.04 -4.773
+12: tek_yil          F 33.757 41.86 28.994
+13: tek_yil          M 32.171 32.12 24.470
+14: tek_yil egim_01_05 -0.323 -2.69  0.508
+Survey replikatlarında yakınsamayan: 0 
+        model buyukluk  rope     tahmin        alt        ust       se alt_yuzdelik ust_yuzdelik   grup
+       <char>   <char> <num>      <num>      <num>      <num>    <num>        <num>        <num> <char>
+1: B11_survey       E1    NA -0.7641390 -6.5015767  4.9732988 2.927318   -6.3802649    4.7058352      B
+2: B11_survey       E2    NA  1.1688358 -8.4024174 10.7400890 4.883382   -8.1538934   10.8684867      B
+3: B11_survey      E3a    NA  0.1943986 -9.7729755 10.1617727 5.085488  -10.2610429    9.4928328      B
+4: B11_survey      E3b    NA -3.5048517 -6.4260568 -0.5836466 1.490438   -6.4945719   -0.6060533      B
+5: B11_survey       E4    NA  4.8680861  0.5307664  9.2054057 2.212959    0.3694092    9.0174339      B
+                                                                                                                  soru     n  olay        aralik     etiket
+                                                                                                                <char> <int> <int>        <char>     <char>
+1: Mevcut tasarım bilgileriyle kurulmuş ağırlıklı duyarlılık modeli (svyglm, zincir kümeli; 1.000 bootstrap replikatı) 18868  5788 güven aralığı B11_survey
+2: Mevcut tasarım bilgileriyle kurulmuş ağırlıklı duyarlılık modeli (svyglm, zincir kümeli; 1.000 bootstrap replikatı) 18868  5788 güven aralığı B11_survey
+3: Mevcut tasarım bilgileriyle kurulmuş ağırlıklı duyarlılık modeli (svyglm, zincir kümeli; 1.000 bootstrap replikatı) 18868  5788 güven aralığı B11_survey
+4: Mevcut tasarım bilgileriyle kurulmuş ağırlıklı duyarlılık modeli (svyglm, zincir kümeli; 1.000 bootstrap replikatı) 18868  5788 güven aralığı B11_survey
+5: Mevcut tasarım bilgileriyle kurulmuş ağırlıklı duyarlılık modeli (svyglm, zincir kümeli; 1.000 bootstrap replikatı) 18868  5788 güven aralığı B11_survey
+                      kod buyukluk tahmin    alt   ust  fark rope_en  maddi
+                   <char>   <char>  <num>  <num> <num> <num>  <char> <lgcl>
+  1:          A10_destek3       E1  -1.05  -4.54  2.66 -0.74      ic  FALSE
+  2:          A10_destek3       E2   0.39  -5.28  6.22 -0.05      ic  FALSE
+  3:          A10_destek3      E3a   1.53  -4.79  7.60  0.12     ust  FALSE
+  4:          A10_destek3      E3b  -3.07  -5.13 -1.05 -0.36     alt  FALSE
+  5:       A11_esit_haric       E1  -0.08  -3.97  4.09  0.22      ic  FALSE
+  6:       A11_esit_haric       E2   0.22  -5.67  6.74 -0.21      ic  FALSE
+  7:       A11_esit_haric      E3a   1.62  -5.47  8.34  0.20     ust  FALSE
+  8:       A11_esit_haric      E3b  -2.60  -5.01 -0.24  0.11     alt  FALSE
+  9:              A1_2025       E1  -0.03  -6.26  6.62  0.28      ic  FALSE
+ 10:              A1_2025       E2  -1.15 -10.52  9.39 -1.58     alt   TRUE
+ 11:              A1_2025      E3a   0.88 -10.34 11.19 -0.53     ust  FALSE
+ 12:              A1_2025      E3b  -4.77  -8.42 -1.21 -2.06     alt   TRUE
+ 13:              A2_2023       E1   1.65  -5.86  9.39  1.96     ust   TRUE
+ 14:              A2_2023       E2   3.90  -8.22 16.55  3.47     ust   TRUE
+ 15:              A2_2023      E3a  -7.02 -20.44  5.98 -8.44     alt   TRUE
+ 16:              A2_2023      E3b  -4.74  -9.20 -0.42 -2.03     alt   TRUE
+ 17:              A2_2024       E1  -2.26  -9.59  5.50 -1.96     alt   TRUE
+ 18:              A2_2024       E2   0.82 -10.66 13.37  0.38     ust   TRUE
+ 19:              A2_2024      E3a   7.88  -5.59 20.50  6.47     ust   TRUE
+ 20:              A2_2024      E3b  -1.04  -5.26  3.12  1.67      ic   TRUE
+ 21:             A3_ucret       E1   2.44  -2.08  7.20  2.75     ust   TRUE
+ 22:             A3_ucret       E2   1.57  -5.61  9.20  1.14     ust   TRUE
+ 23:             A3_ucret      E3a  -1.24  -9.43  6.67 -2.66     alt   TRUE
+ 24:             A3_ucret      E3b  -2.74  -5.65  0.17 -0.03     alt  FALSE
+ 25: A4_ucretsiz_aile_yok       E1  -0.20  -4.13  3.93  0.11      ic  FALSE
+ 26: A4_ucretsiz_aile_yok       E2  -0.05  -6.29  6.54 -0.48      ic  FALSE
+ 27: A4_ucretsiz_aile_yok      E3a   1.85  -5.33  8.93  0.44     ust  FALSE
+ 28: A4_ucretsiz_aile_yok      E3b  -2.43  -4.87 -0.10  0.28     alt  FALSE
+ 29:          A5_tek_cift       E1  -0.03  -4.01  3.84  0.27      ic  FALSE
+ 30:          A5_tek_cift       E2   0.99  -5.10  7.25  0.55      ic  FALSE
+ 31:          A5_tek_cift      E3a   0.88  -5.88  7.82 -0.54      ic   TRUE
+ 32:          A5_tek_cift      E3b  -2.48  -4.88 -0.17  0.23     alt  FALSE
+ 33:        A6_tum_yaslar       E1  -0.88  -4.82  3.10 -0.57      ic  FALSE
+ 34:        A6_tum_yaslar       E2   0.78  -5.40  7.19  0.35      ic  FALSE
+ 35:        A6_tum_yaslar      E3a   1.25  -5.70  8.21 -0.16     ust  FALSE
+ 36:        A6_tum_yaslar      E3b  -2.14  -4.55  0.33  0.57     alt  FALSE
+ 37:          A7_TR63_yok       E1  -0.11  -3.84  3.91  0.20      ic  FALSE
+ 38:          A7_TR63_yok       E2   0.32  -5.68  6.59 -0.11      ic  FALSE
+ 39:          A7_TR63_yok      E3a   0.78  -6.06  7.72 -0.64      ic   TRUE
+ 40:          A7_TR63_yok      E3b  -2.96  -5.28 -0.67 -0.25     alt  FALSE
+ 41:       A8_durum_uyumu       E1  -2.13  -6.71  2.76 -1.82     alt   TRUE
+ 42:       A8_durum_uyumu       E2  -1.37  -8.38  6.37 -1.81     alt   TRUE
+ 43:       A8_durum_uyumu      E3a   4.36  -4.21 12.45  2.94     ust   TRUE
+ 44:       A8_durum_uyumu      E3b   0.08  -3.08  3.13  2.79      ic   TRUE
+ 45:         A9_tum_uygun       E1  -0.40  -3.42  2.67 -0.09      ic  FALSE
+ 46:         A9_tum_uygun       E2   1.95  -2.93  7.00  1.51     ust   TRUE
+ 47:         A9_tum_uygun      E3a  -0.03  -5.30  5.09 -1.45      ic   TRUE
+ 48:         A9_tum_uygun      E3b  -2.75  -4.45 -1.11 -0.04     alt  FALSE
+ 49:       B10_agirliksiz       E1   0.07  -3.69  3.94  0.38      ic  FALSE
+ 50:       B10_agirliksiz       E2   0.55  -5.37  6.77  0.11      ic  FALSE
+ 51:       B10_agirliksiz      E3a   0.93  -5.78  7.46 -0.48      ic   TRUE
+ 52:       B10_agirliksiz      E3b  -2.62  -4.93 -0.33  0.09     alt  FALSE
+ 53:           B11_survey       E1  -0.76  -6.50  4.97 -0.46    <NA>  FALSE
+ 54:           B11_survey       E2   1.17  -8.40 10.74  0.73    <NA>  FALSE
+ 55:           B11_survey      E3a   0.19  -9.77 10.16 -1.22    <NA>   TRUE
+ 56:           B11_survey      E3b  -3.50  -6.43 -0.58 -0.80    <NA>  FALSE
+ 57:        B12_zincirsiz       E1  -0.57  -5.03  4.18 -0.27      ic  FALSE
+ 58:        B12_zincirsiz       E2   1.12  -6.08  9.05  0.69     ust   TRUE
+ 59:        B12_zincirsiz      E3a   0.39  -7.70  7.94 -1.03      ic   TRUE
+ 60:        B12_zincirsiz      E3b  -3.51  -5.98 -1.05 -0.80     alt  FALSE
+ 61:        B13_ana_bolge       E1  -0.34  -4.23  3.71 -0.03      ic  FALSE
+ 62:        B13_ana_bolge       E2   0.47  -5.62  6.98  0.03      ic  FALSE
+ 63:        B13_ana_bolge      E3a   1.28  -5.78  8.27 -0.13     ust  FALSE
+ 64:        B13_ana_bolge      E3b  -2.72  -5.13 -0.42 -0.01     alt  FALSE
+ 65:         B13_ana_reis       E1  -0.06  -3.89  3.94  0.24      ic  FALSE
+ 66:         B13_ana_reis       E2   0.80  -5.28  7.10  0.36      ic  FALSE
+ 67:         B13_ana_reis      E3a   1.04  -5.58  7.67 -0.38      ic   TRUE
+ 68:         B13_ana_reis      E3b  -2.58  -4.92 -0.31  0.13     alt  FALSE
+ 69:             B13_imza       E1  -0.01  -3.93  4.28  0.30      ic  FALSE
+ 70:             B13_imza       E2   0.81  -5.43  7.63  0.38      ic  FALSE
+ 71:             B13_imza      E3a   0.06  -7.40  6.77 -1.36      ic   TRUE
+ 72:             B13_imza      E3b  -2.98  -5.39 -0.64 -0.27     alt  FALSE
+ 73:           B14_sigma2       E1  -0.31  -4.13  3.69  0.00      ic  FALSE
+ 74:           B14_sigma2       E2   0.46  -5.52  6.79  0.03      ic  FALSE
+ 75:           B14_sigma2      E3a   1.43  -5.40  8.07  0.02     ust  FALSE
+ 76:           B14_sigma2      E3b  -2.69  -5.05 -0.27  0.02     alt  FALSE
+ 77:          B14b_sigma5       E1  -0.30  -4.11  3.72  0.00      ic  FALSE
+ 78:          B14b_sigma5       E2   0.44  -5.68  6.69  0.00      ic  FALSE
+ 79:          B14b_sigma5      E3a   1.39  -5.68  8.40 -0.03     ust  FALSE
+ 80:          B14b_sigma5      E3b  -2.71  -5.13 -0.34  0.00     alt  FALSE
+ 81:             B15_kish       E1  -0.31  -5.00  4.37  0.00      ic  FALSE
+ 82:             B15_kish       E2   0.51  -7.11  8.36  0.08      ic  FALSE
+ 83:             B15_kish      E3a   0.49  -7.99  8.82 -0.93     ust  FALSE
+ 84:             B15_kish      E3b  -3.27  -6.03 -0.52 -0.56     alt  FALSE
+ 85:            C15_esik5       E1  -0.59  -4.54  3.68 -0.28      ic  FALSE
+ 86:            C15_esik5       E2   0.03  -6.09  6.67 -0.41      ic  FALSE
+ 87:            C15_esik5      E3a   1.86  -5.26  8.75  0.45     ust  FALSE
+ 88:            C15_esik5      E3b  -2.65  -5.23 -0.04  0.06     alt  FALSE
+ 89:            C16_O_izk       E1  -0.40  -4.22  3.69 -0.09      ic  FALSE
+ 90:            C16_O_izk       E2   0.42  -5.69  6.95 -0.02      ic  FALSE
+ 91:            C16_O_izk      E3a   1.31  -5.67  8.15 -0.10     ust  FALSE
+ 92:            C16_O_izk      E3b  -2.77  -5.13 -0.47 -0.06     alt  FALSE
+ 93:          C17_esdeger       E1   0.12  -3.57  4.20  0.43      ic  FALSE
+ 94:          C17_esdeger       E2   0.97  -4.96  7.34  0.53      ic  FALSE
+ 95:          C17_esdeger      E3a   2.41  -4.70  9.21  0.99     ust  FALSE
+ 96:          C17_esdeger      E3b  -2.33  -4.56 -0.07  0.38     alt  FALSE
+ 97:           C18_fs_df3       E1  -0.40  -4.14  3.48 -0.09      ic  FALSE
+ 98:           C18_fs_df3       E2   0.19  -5.52  6.17 -0.24      ic  FALSE
+ 99:           C18_fs_df3      E3a   1.55  -5.20  8.15  0.13     ust  FALSE
+100:           C18_fs_df3      E3b  -2.73  -5.17 -0.46 -0.02     alt  FALSE
+101:           C18_fs_df5       E1  -0.33  -3.92  3.68 -0.02      ic  FALSE
+102:           C18_fs_df5       E2   0.57  -5.63  7.28  0.13      ic  FALSE
+103:           C18_fs_df5      E3a   1.06  -6.31  7.79 -0.35      ic   TRUE
+104:           C18_fs_df5      E3b  -2.98  -5.44 -0.61 -0.27     alt  FALSE
+105:         C18_fs_sabit       E1  -0.26  -3.98  3.48  0.05      ic  FALSE
+106:         C18_fs_sabit       E2   0.77  -5.04  6.87  0.33      ic  FALSE
+107:         C18_fs_sabit      E3a   1.04  -6.01  7.82 -0.37      ic   TRUE
+108:         C18_fs_sabit      E3b  -2.76  -5.13 -0.38 -0.05     alt  FALSE
+109:           C19_capa20       E1  -0.41  -3.09  2.25 -0.10      ic     NA
+110:           C19_capa20       E2   0.63  -3.64  5.14  0.20      ic     NA
+111:           C19_capa20      E3a   1.40  -3.72  6.42 -0.01      ic     NA
+112:           C19_capa20      E3b  -2.52  -4.94 -0.14  0.19     alt     NA
+113:           C19_capa25       E1  -0.37  -2.51  1.78 -0.06      ic     NA
+114:           C19_capa25       E2   0.59  -3.12  4.44  0.16      ic     NA
+115:           C19_capa25      E3a   1.39  -3.24  6.01 -0.02      ic     NA
+116:           C19_capa25      E3b  -2.59  -4.90 -0.30  0.12     alt     NA
+117:       C20_fs_prior05       E1  -0.34  -3.50  2.99 -0.03      ic  FALSE
+118:       C20_fs_prior05       E2   0.36  -4.07  5.13 -0.07      ic  FALSE
+119:       C20_fs_prior05      E3a   1.54  -4.44  7.14  0.12      ic   TRUE
+120:       C20_fs_prior05      E3b  -2.71  -4.90 -0.56  0.00     alt  FALSE
+121:        C20_fs_prior2       E1  -0.29  -4.46  3.99  0.02      ic  FALSE
+122:        C20_fs_prior2       E2   0.53  -6.66  7.89  0.09      ic  FALSE
+123:        C20_fs_prior2      E3a   1.43  -6.43  8.79  0.02     ust  FALSE
+124:        C20_fs_prior2      E3b  -2.73  -5.21 -0.30 -0.02     alt  FALSE
+125:              C21_b25       E1  -0.43  -4.89  3.90 -0.12      ic  FALSE
+126:              C21_b25       E2   0.44  -6.79  7.71  0.01      ic  FALSE
+127:              C21_b25      E3a   0.82  -6.71  8.59 -0.60      ic   TRUE
+128:              C21_b25      E3b  -2.97  -5.50 -0.61 -0.26     alt  FALSE
+129:               C21_b5       E1  -0.53  -4.78  4.04 -0.22      ic  FALSE
+130:               C21_b5       E2   0.43  -7.03  7.93 -0.01      ic  FALSE
+131:               C21_b5      E3a   0.69  -6.90  8.19 -0.72      ic   TRUE
+132:               C21_b5      E3b  -3.02  -5.54 -0.64 -0.31     alt  FALSE
+133:                   M3       E1  -0.52  -4.29  3.43 -0.21      ic  FALSE
+134:                   M3       E2   0.03  -5.92  6.33 -0.40      ic  FALSE
+135:                   M3      E3a   1.45  -5.48  8.12  0.04     ust  FALSE
+136:                   M3      E3b  -2.24  -4.56  0.06  0.47     alt  FALSE
+137:                   M2       E1  -0.31  -4.17  3.61  0.00      ic  FALSE
+138:                   M2       E2   0.44  -5.54  6.83  0.00      ic  FALSE
+139:                   M2      E3a   1.42  -5.58  8.09  0.00     ust  FALSE
+140:                   M2      E3b  -2.71  -5.02 -0.39  0.00     alt  FALSE
+                      kod buyukluk tahmin    alt   ust  fark rope_en  maddi
+                   <char>   <char>  <num>  <num> <num> <num>  <char> <lgcl>
+tablolar_tumu.xlsx 192 hucrede alt/ust simge
+analiz.R bitti: 2026-10-29 20:35:44 ; toplam 15.4 dk
+analiz bitti 0
+Figures/Figure1.png  1
+Figures/Figure2.png  2
+Figures/Figure3.png  3
+Supplementary/FigureS1.png  S1
+Supplementary/FigureS2.png  S2
+Supplementary/FigureS3.png  S3
+Supplementary/FigureS4.png  S4
+Supplementary/FigureS5.png  S5
+figurler bitti

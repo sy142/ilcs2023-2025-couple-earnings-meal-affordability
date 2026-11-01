@@ -1,0 +1,11 @@
+Start sampling
+Running MCMC with 1 chain...
+
+Chain 1 UNSUPPORTED (log once): createKernel: newComputePipelineState failed
+Chain 1 Unrecoverable error evaluating the log probability at the initial value.
+Chain 1 Exception: calculate: clCreateKernel CL_INVALID_KERNEL: Unknown error -48 (in '/var/folders/5z/v7wnmls54z5fzwb6w7hvb10w0000gn/T/RtmpckDuQj/model-10b826947bf72.stan', line 32, column 4 to column 61)
+Warning: Chain 1 finished unexpectedly!
+
+HATA: Fitting failed. Unable to retrieve the metadata. 
+Warning message:
+No chains finished successfully. Unable to retrieve the fit. 

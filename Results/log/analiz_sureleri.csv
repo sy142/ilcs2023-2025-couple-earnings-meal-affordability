@@ -1,0 +1,23 @@
+adim,yer,dakika
+okuma,CPU,0.01
+doğrulama,CPU,0.03
+çift ve uygunluk,CPU,0.01
+bağlantı zincirleri,CPU,0.02
+bağlantı kalitesi,CPU,0
+fizibilite,CPU,0.01
+ortak destek,CPU,0.07
+önsel öngörü denetimi,CPU,0.03
+model fonksiyonları,CPU,0
+M1–M3 kurulum ve tanı,CPU,6.23
+M1–M3 standartlaştırma,CPU,0.04
+ikincil: kocanın durumu,CPU,4.51
+ikincil: yıllar,CPU,4.14
+Ek 1: zaman kanalı modelleri,CPU,0.1
+duyarlılık: Bayesçi,CPU,0.75
+duyarlılık: survey modeli,CPU,0
+Table 1–2,CPU,0.03
+figür verileri: akış,CPU,0
+duyarlılık özeti ve figür verileri,CPU,0
+ek tablolar,CPU,0.11
+Ek 1 tabloları,CPU,0.02
+sayilar.json ve teslim dosyaları,CPU,0.01

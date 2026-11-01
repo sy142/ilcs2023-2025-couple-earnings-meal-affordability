@@ -1,0 +1,1 @@
+Rscript Codes/analiz.R > Results/log/temiz_kosu.txt 2>&1  132518.15s user 2933.80s system 1016% cpu 3:42:08.83 total
